@@ -3,7 +3,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar sticky top-0 z-50 text-white">
+      {/* TODO: add scroll transition to navbar at some point */}
       <div className="flex-1">
         <div
           tabIndex={0}
