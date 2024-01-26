@@ -25,7 +25,7 @@ export default function Home() {
             src="https://kcesar.org/assets/logo/logo_kcesar_300x300.png"
             width={200}
             height={200}
-            className="drop-shadow inline-block pb-10"
+            className="drop-shadow pb-10 hidden md:inline-block"
           />
           <h1 className="text-7xl neuzeit-light text-slate-50 drop-shadow">
             King County Explorer Search and Rescue
