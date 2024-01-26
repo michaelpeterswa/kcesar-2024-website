@@ -27,7 +27,14 @@ export default function Home() {
             height={200}
             className="drop-shadow pb-10 hidden md:inline-block"
           />
-          <h1 className="text-7xl neuzeit-light text-slate-50 drop-shadow">
+          <Image
+            alt="Tailwind CSS Navbar component"
+            src="https://kcesar.org/assets/logo/logo_kcesar_300x300.png"
+            width={120}
+            height={120}
+            className="drop-shadow pb-10 inline-block md:hidden"
+          />
+          <h1 className="text-4xl md:text-7xl neuzeit-light text-slate-50 drop-shadow">
             King County Explorer Search and Rescue
           </h1>
           <br />
