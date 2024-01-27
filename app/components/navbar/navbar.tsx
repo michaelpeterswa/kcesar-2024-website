@@ -54,7 +54,7 @@ export default function Navbar() {
             <div className="w-12 rounded-full">
               <Image
                 alt="Tailwind CSS Navbar component"
-                src="https://kcesar.org/assets/logo/logo_kcesar_300x300.png"
+                src="/kcesar/logo_kcesar_300x300.png"
                 width={300}
                 height={300}
               />
@@ -63,7 +63,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-white">
           <li className="px-1">
             <Link href="/join-us">Join Us</Link>
           </li>
