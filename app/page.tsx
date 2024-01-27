@@ -23,9 +23,9 @@ export default function Home() {
             src="/kcesar/logo_kcesar_300x300.png"
             width={200}
             height={200}
-            className="drop-shadow inline-block pb-10"
+            className="drop-shadow pb-10 hidden md:inline-block"
           />
-          <h1 className="text-7xl neuzeit-light text-white drop-shadow">
+          <h1 className="text-4xl md:text-7xl neuzeit-light text-white drop-shadow">
             King County ESAR
           </h1>
           <br />
