@@ -30,7 +30,7 @@ export default function Home() {
           </h1>
           <br />
           <h1 className="text-2xl neuzeit-light text-white drop-shadow">
-            King County, Washington
+            Est. 1954 - King County, Washington
           </h1>
           <br />
           <p className="text-white">
@@ -39,6 +39,7 @@ export default function Home() {
             States and the largest of eight member-units of the King County
             Search & Rescue Association.
           </p>
+          <br />
           <Link href="/join-us" className="btn">
             Join Us
           </Link>
