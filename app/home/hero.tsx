@@ -18,11 +18,11 @@ export default function Hero() {
           <span className="block">Search & Rescue</span>
         </h1>
         <br />
-        <h1 className="text-2xl font-gin text-white drop-shadow">
+        <h1 className="text-xl md:text-3xl font-gin text-white drop-shadow">
           Est. 1954 - King County, Washington
         </h1>
         <br />
-        <p className="text-white text-lg">
+        <p className="text-white text-sm md:text-lg">
           King County Explorer Search & Rescue is one of the earliest Search &
           Rescue organizations established in the United States and the largest
           of eight member-units of the King County Search & Rescue Association.
