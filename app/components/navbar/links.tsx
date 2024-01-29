@@ -8,13 +8,13 @@ export default function Links() {
           <Link href="/join-us">Join Us</Link>
         </li>
         <li className="px-1">
-          <Link href="/members">Members</Link>
+          <Link href="/about">About Us</Link>
         </li>
         <li className="px-1">
           <Link href="/safety-tips">Safety Tips</Link>
         </li>
         <li className="px-1">
-          <Link href="/about">About</Link>
+          <Link href="/members">Members</Link>
         </li>
         <li className="px-1">
           <details>

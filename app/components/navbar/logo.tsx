@@ -9,10 +9,10 @@ export default function Logo() {
       className="btn btn-ghost btn-circle avatar mx-2"
     >
       <Link href="/">
-        <div className="w-12 rounded-full">
+        <div className="w-12 rounded-full hidden md:inline-block">
           <Image
             alt="Tailwind CSS Navbar component"
-            src="https://kcesar.org/assets/logo/logo_kcesar_300x300.png"
+            src="/kcesar/logo_kcesar_300x300.png"
             width={300}
             height={300}
           />
