@@ -1,48 +1,60 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
+import Stats from "./home/stats";
+import Video from "./home/video";
+import Hero from "./home/hero";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster="https://mptrswa.com/marckworth1080frame1.png"
-        className="fixed -z-20 w-screen h-screen object-cover top-0 left-0 brightness-75"
-      >
-        <source src="https://mptrswa.com/marckworth1080.mp4" type="video/mp4" />
-      </video>
-      <div className="h-screen flex text-center items-center justify-center">
-        {/* <div className="max-w-6xl p-10 backdrop-brightness-75 rounded-3xl backdrop-blur-sm"> */}
-        <div className="max-w-6xl p-10">
-          <Image
-            alt="Tailwind CSS Navbar component"
-            src="/kcesar/logo_kcesar_300x300.png"
-            width={200}
-            height={200}
-            className="drop-shadow pb-10 hidden md:inline-block"
-          />
-          <h1 className="text-4xl md:text-7xl neuzeit-light text-white drop-shadow">
-            King County ESAR
-          </h1>
-          <br />
-          <h1 className="text-2xl neuzeit-light text-white drop-shadow">
-            Est. 1954 - King County, Washington
-          </h1>
-          <br />
-          <p className="text-white">
-            Founded in 1954, King County Explorer Search & Rescue is one of the
-            earliest Search & Rescue organizations established in the United
-            States and the largest of eight member-units of the King County
-            Search & Rescue Association.
-          </p>
-          <br />
-          <Link href="/join-us" className="btn">
-            Join Us
-          </Link>
+    <div>
+      <div className="container mx-auto">
+        <div className="min-h-screen">
+          <Video />
+          <Hero />
+        </div>
+      </div>
+      <div className=" border-t-black border-t-4">
+        <div className="flex min-w-full bg-white py-10">
+          <div className="container mx-auto text-black">
+            <div className="grid grid-cols-3 gap-4 place-items-stretch">
+              <div className="col-span-2 overflow-hidden">
+                <Image
+                  alt="Tailwind CSS Navbar component"
+                  src="https://mptrswa.com/rescue.jpg"
+                  width={1500}
+                  height={400}
+                  className="brightness-50 object-cover max-w-[1500px] max-h-[400px]"
+                />
+              </div>
+              <div className="bg-orange-500">
+                <Stats />
+              </div>
+              <div className=" bg-yellow-500">
+                <Stats />
+              </div>
+              <div className="col-span-2 overflow-hidden">
+                <Image
+                  alt="Tailwind CSS Navbar component"
+                  src="https://mptrswa.com/rescue.jpg"
+                  width={1500}
+                  height={400}
+                  className="brightness-50 object-cover max-w-[1500px] max-h-[400px]"
+                />
+              </div>
+              <div className="col-span-2 overflow-hidden">
+                <Image
+                  alt="Tailwind CSS Navbar component"
+                  src="https://mptrswa.com/rescue.jpg"
+                  width={1500}
+                  height={400}
+                  className="brightness-50 object-cover max-w-[1500px] max-h-[400px]"
+                />
+              </div>
+              <div className="bg-purple-500">
+                <Stats />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

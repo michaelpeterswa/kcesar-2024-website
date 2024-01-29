@@ -8,8 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'esar-green' : '#026737',
+      },
       fontFamily: {
         'neuzeit': ["neuzeit-grotesk", 'sans-serif'],
+        'stratum': ["stratum-2-web", 'sans-serif'],
+        'brothers': ["brothers", 'sans-serif'],
+        'gin': ["gin", 'serif'],
+        'komet': ["komet", 'sans-serif'],
       }
     },
   },
