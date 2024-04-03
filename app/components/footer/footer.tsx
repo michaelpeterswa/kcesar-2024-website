@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="footer footer-center bg-esar-green text-primary-content pb-5">
+    <footer className="footer footer-center bg-esar-green text-primary-content py-5 text-white">
       <aside>
+        <h1 className="font-bold text-2xl">Support us to save lives.</h1>
         <Image
           alt="Tailwind CSS Navbar component"
           src="/kcesar/logo_kcesar_300x300.png"
@@ -15,6 +16,13 @@ export default function Footer() {
         <p className="font-bold">
           King County Explorer Search & Rescue <br />
           Providing search and rescue services to King County since 1954
+          <br />
+          <br />
+          King County Explorer Search & Rescue (ESAR) is a 501(c)(3) Volunteer
+          Organization
+          <br />
+          <br />
+          EIN #91-1433442
         </p>
         <p>Copyright © 2024 - All right reserved</p>
       </aside>

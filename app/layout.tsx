@@ -22,7 +22,7 @@ export default function RootLayout({
         ></link>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </head>
-      <body className="font-komet">
+      <body className="font-trade-gothic-next">
         <Navbar />
         {children}
         <Footer />

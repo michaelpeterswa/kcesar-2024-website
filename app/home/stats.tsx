@@ -1,17 +1,23 @@
+"use client";
+
+import CountUp from "react-countup";
+
 export default function Stats({
   number,
   description,
 }: {
-  number: string;
+  number: Number;
   description: string;
 }) {
   return (
     <div className="flex justify-center items-center h-full">
       <div>
-        <h1 className="text-center">
-          <span className="font-komet text-6xl block">{number}</span>
+        <text className="text-center">
+          <span className="font-komet text-6xl block pb-4">
+            <CountUp delay={2} start={0} end={number.valueOf()} duration={4} />+
+          </span>
           <span className="font-komet text-2xl block">{description}</span>
-        </h1>
+        </text>
       </div>
     </div>
   );
