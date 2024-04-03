@@ -41,6 +41,7 @@ export default async function About() {
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 px-20">
         {people.map((person) => (
           <Card
+            key={person.personName}
             personName={person.personName}
             title={person.title}
             location=""

@@ -27,8 +27,8 @@ export default async function JoinUs() {
       <text className="text-xl pt-8 text-justify px-20 container">
         In order to ensure that new members have the knowledge and skills
         necessary to positively and safely contribute to search and rescue
-        operations prospective members must complete King County ESAR'S Basic
-        Training program.
+        operations prospective members must complete King County ESAR&apos;S
+        Basic Training program.
       </text>
       <br />
       <div className="relative h-72 w-2/5">
@@ -43,7 +43,7 @@ export default async function JoinUs() {
         They must also provide documentation for several independently obtained
         certifications and complete core-competency training as prescribed by
         the Washington State Department of Emergency Management and the King
-        County Sheriff's Office.
+        County Sheriff&apos;s Office.
       </text>
       <br />
       <h2 className="">Basic Training Overview</h2>
