@@ -13,12 +13,12 @@ export default function Hero() {
           priority={true}
           className="drop-shadow pb-10 inline-block"
         />
-        <h1 className="text-4xl md:text-7xl font-gin font-normal text-white drop-shadow">
+        <h1 className="text-4xl md:text-7xl font-gin font-normal text-white drop-shadow tracking-wider">
           <span className="block">King County Explorer</span>
           <span className="block">Search & Rescue</span>
         </h1>
         <br />
-        <h1 className="text-xl md:text-3xl font-gin text-white drop-shadow">
+        <h1 className="text-xl md:text-3xl font-gin text-white drop-shadow tracking-widest">
           Est. 1954 - King County, Washington
         </h1>
         <br />

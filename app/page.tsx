@@ -1,11 +1,12 @@
 import React from "react";
-import Image from "next/image";
 import Stats from "./home/stats";
 import Video from "./home/video";
 import Hero from "./home/hero";
 import GridImage from "./home/gridimage";
 import GridText from "./home/gridtext";
 import SmallImage from "./home/smallimage";
+import Link from "next/link";
+import NewsBlock from "./home/newsblock";
 
 export default function Home() {
   return (
@@ -21,68 +22,80 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="hidden grid-cols-3 md:grid gap-4 gap-y-10 place-items-stretch">
               <GridImage
-                location="/kcesar/hero_1.jpg"
-                alt="Rescuers standing at the edge of a cliff"
+                location="/kcesar/1.jpg"
+                alt="Rescuers in van pointing at TV with map"
               />
 
               <GridText
                 title="Who We Are"
                 body="King County Explorer Search & Rescue (also known as KCESAR or ESAR) is the primary ground search and rescue resource in King County and the largest of nine member-units in the King County Search & Rescue Association. We operate under the purview of the King County Sheriff's Office and Washington State Department of Emergency Management."
+                link="/about"
+                linkText="Learn More"
               />
 
               <GridText
                 title="Join Us"
                 body="King County Explorer Search & Rescue is open to both adult and youth membership. New members must complete our comprehensive basic training program which is designed to prepare them for the challenges that they will face in the field."
+                link="/join-us"
+                linkText="Join Us"
               />
 
               <GridImage
-                location="/kcesar/hero_2.jpg"
-                alt="Rescuers carrying a subject on a litter"
+                location="/kcesar/7.jpg"
+                alt="KCESAR logo on a jacket"
               />
 
               <GridImage
-                location="/kcesar/hero_3.jpg"
-                alt="Rescuers walking up a snowy trail"
+                location="/kcesar/11.jpg"
+                alt="Rescuers pointing at a map outside"
               />
 
               <GridText
                 title="Donate"
                 body="100% Volunteer, 100% Donation Funded. King County Explorer Search & Rescue is a non-profit organization. It is donations from people like you that make Search & Rescue services possible. Please consider donating today."
+                link="/donate"
+                linkText="Donate Now"
               />
             </div>
 
             <div className="md:hidden">
               <SmallImage
-                location="/kcesar/hero_1.jpg"
-                alt="Rescuers standing at the edge of a cliff"
+                location="/kcesar/1.jpg"
+                alt="Rescuers in van pointing at TV with map"
               />
               <GridText
                 title="Who We Are"
                 body="ESAR is the primary ground search and rescue resource in King County and the largest of nine member-units in the King County Search & Rescue Association. We operate under the purview of the King County Sheriff's Office and Washington State Department of Emergency Management."
+                link="/about"
+                linkText="Learn More"
               />
               <div className="divider"></div>
 
               <SmallImage
-                location="/kcesar/hero_2.jpg"
-                alt="Rescuers carrying a subject on a litter"
+                location="/kcesar/7.jpg"
+                alt="KCESAR logo on a jacket"
               />
               <GridText
                 title="Donate"
                 body="100% Volunteer, 100% Donation Funded. King County Explorer Search & Rescue is a non-profit organization. It is donations from people like you that make Search & Rescue services possible. Please consider donating today."
+                link="/donate"
+                linkText="Donate Now"
               />
               <div className="divider"></div>
 
               <SmallImage
-                location="/kcesar/hero_3.jpg"
-                alt="Rescuers walking up a snowy trail"
+                location="/kcesar/11.jpg"
+                alt="Rescuers pointing at a map outside"
               />
               <GridText
                 title="Join Us"
                 body="King County Explorer Search & Rescue is open to both adult and youth membership. New members must complete our comprehensive basic training program which is designed to prepare them for the challenges that they will face in the field."
+                link="/join-us"
+                linkText="Join Us"
               />
             </div>
 
-            <div className="divider pt-20"></div>
+            <div className="divider py-10"></div>
             <div className="p-4 py-16">
               <h1 className="font-bold">KCESAR by the numbers:</h1>
             </div>
@@ -103,6 +116,11 @@ export default function Home() {
               <Stats number={10000} description="Hours" />
               <div className="divider"></div>
               <Stats number={500} description="Volunteers" />
+            </div>
+            <div className="divider py-10"></div>
+            <h1 className="font-bold pb-3">KCESAR in the news:</h1>
+            <div className="container mx-auto">
+              <NewsBlock />
             </div>
           </div>
         </div>
