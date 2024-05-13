@@ -1,9 +1,14 @@
+import Banner from "../components/banner/banner";
+
 export default async function Truck() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-3xl">
-        We need a new Rescue Truck, will you help us?
-      </h1>
+    <div className="flex flex-col items-center pb-10">
+      <Banner
+        title="New Rescue Truck"
+        location="/kcesar/8.jpg"
+        alt="Rescuers walking in field"
+      />
+      <h2>Will you help us?</h2>
     </div>
   );
 }

@@ -17,6 +17,9 @@ const config: Config = {
         'brothers': ["brothers", 'sans-serif'],
         'gin': ["gin", 'serif'],
         'komet': ["komet", 'sans-serif'],
+        'new-science': ["new-science", 'sans-serif'],
+        'usual': ["usual", 'sans-serif'],
+        'trade-gothic-next': ["trade-gothic-next", 'sans-serif'],
       }
     },
   },

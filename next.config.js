@@ -8,9 +8,14 @@ const nextConfig = {
               port: '',
             },
             {
-                protocol: 'https',
-                hostname: 'mptrswa.com',
-                port: '',
+              protocol: 'https',
+              hostname: 'mptrswa.com',
+              port: '',
+            },
+            {
+              protocol: 'https',
+              hostname: 'picsum.photos',
+              port: '',
             }
           ],
     },

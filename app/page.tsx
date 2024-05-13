@@ -1,8 +1,12 @@
 import React from "react";
-import Image from "next/image";
 import Stats from "./home/stats";
 import Video from "./home/video";
 import Hero from "./home/hero";
+import GridImage from "./home/gridimage";
+import GridText from "./home/gridtext";
+import SmallImage from "./home/smallimage";
+import Link from "next/link";
+import NewsBlock from "./home/newsblock";
 
 export default function Home() {
   return (
@@ -13,46 +17,110 @@ export default function Home() {
           <Hero />
         </div>
       </div>
-      <div className=" border-t-black border-t-4">
-        <div className="flex min-w-full bg-white py-10">
-          <div className="container mx-auto text-black">
-            <div className="grid grid-cols-3 gap-4 place-items-stretch">
-              <div className="col-span-2 overflow-hidden">
-                <Image
-                  alt="Tailwind CSS Navbar component"
-                  src="https://mptrswa.com/rescue.jpg"
-                  width={1500}
-                  height={400}
-                  className="brightness-50 object-cover max-w-[1500px] max-h-[400px]"
-                />
+      <div className="">
+        <div className="flex min-w-full justify-items-center content-center text-center bg-base-100 py-10">
+          <div className="container mx-auto">
+            <div className="hidden grid-cols-3 md:grid gap-4 gap-y-10 place-items-stretch">
+              <GridImage
+                location="/kcesar/1.jpg"
+                alt="Rescuers in van pointing at TV with map"
+              />
+
+              <GridText
+                title="Who We Are"
+                body="King County Explorer Search & Rescue (also known as KCESAR or ESAR) is the primary ground search and rescue resource in King County and the largest of nine member-units in the King County Search & Rescue Association. We operate under the purview of the King County Sheriff's Office and Washington State Department of Emergency Management."
+                link="/about"
+                linkText="Learn More"
+              />
+
+              <GridText
+                title="Join Us"
+                body="King County Explorer Search & Rescue is open to both adult and youth membership. New members must complete our comprehensive basic training program which is designed to prepare them for the challenges that they will face in the field."
+                link="/join-us"
+                linkText="Join Us"
+              />
+
+              <GridImage
+                location="/kcesar/7.jpg"
+                alt="KCESAR logo on a jacket"
+              />
+
+              <GridImage
+                location="/kcesar/11.jpg"
+                alt="Rescuers pointing at a map outside"
+              />
+
+              <GridText
+                title="Donate"
+                body="100% Volunteer, 100% Donation Funded. King County Explorer Search & Rescue is a non-profit organization. It is donations from people like you that make Search & Rescue services possible. Please consider donating today."
+                link="/donate"
+                linkText="Donate Now"
+              />
+            </div>
+
+            <div className="md:hidden">
+              <SmallImage
+                location="/kcesar/1.jpg"
+                alt="Rescuers in van pointing at TV with map"
+              />
+              <GridText
+                title="Who We Are"
+                body="ESAR is the primary ground search and rescue resource in King County and the largest of nine member-units in the King County Search & Rescue Association. We operate under the purview of the King County Sheriff's Office and Washington State Department of Emergency Management."
+                link="/about"
+                linkText="Learn More"
+              />
+              <div className="divider"></div>
+
+              <SmallImage
+                location="/kcesar/7.jpg"
+                alt="KCESAR logo on a jacket"
+              />
+              <GridText
+                title="Donate"
+                body="100% Volunteer, 100% Donation Funded. King County Explorer Search & Rescue is a non-profit organization. It is donations from people like you that make Search & Rescue services possible. Please consider donating today."
+                link="/donate"
+                linkText="Donate Now"
+              />
+              <div className="divider"></div>
+
+              <SmallImage
+                location="/kcesar/11.jpg"
+                alt="Rescuers pointing at a map outside"
+              />
+              <GridText
+                title="Join Us"
+                body="King County Explorer Search & Rescue is open to both adult and youth membership. New members must complete our comprehensive basic training program which is designed to prepare them for the challenges that they will face in the field."
+                link="/join-us"
+                linkText="Join Us"
+              />
+            </div>
+
+            <div className="divider py-10"></div>
+            <div className="p-4 py-16">
+              <h1 className="font-bold">KCESAR by the numbers:</h1>
+            </div>
+            <div className="md:grid grid-cols-3 gap-4 place-items-stretch hidden">
+              <div className="">
+                <Stats number={150} description="Missions per Year" />
               </div>
-              <div className="bg-orange-500">
-                <Stats />
+              <div className=" ">
+                <Stats number={50000} description="Mission Hours" />
               </div>
-              <div className=" bg-yellow-500">
-                <Stats />
+              <div className="">
+                <Stats number={500} description="Volunteers" />
               </div>
-              <div className="col-span-2 overflow-hidden">
-                <Image
-                  alt="Tailwind CSS Navbar component"
-                  src="https://mptrswa.com/rescue.jpg"
-                  width={1500}
-                  height={400}
-                  className="brightness-50 object-cover max-w-[1500px] max-h-[400px]"
-                />
-              </div>
-              <div className="col-span-2 overflow-hidden">
-                <Image
-                  alt="Tailwind CSS Navbar component"
-                  src="https://mptrswa.com/rescue.jpg"
-                  width={1500}
-                  height={400}
-                  className="brightness-50 object-cover max-w-[1500px] max-h-[400px]"
-                />
-              </div>
-              <div className="bg-purple-500">
-                <Stats />
-              </div>
+            </div>
+            <div className="md:hidden grid-cols-1 place-items-stretch grid ">
+              <Stats number={150} description="Searches per Year" />
+              <div className="divider"></div>
+              <Stats number={10000} description="Hours" />
+              <div className="divider"></div>
+              <Stats number={500} description="Volunteers" />
+            </div>
+            <div className="divider py-10"></div>
+            <h1 className="font-bold pb-3">KCESAR in the news:</h1>
+            <div className="container mx-auto">
+              <NewsBlock />
             </div>
           </div>
         </div>
