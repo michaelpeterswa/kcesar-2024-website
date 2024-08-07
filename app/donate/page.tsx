@@ -1,10 +1,12 @@
-import Banner from "../components/banner/banner";
+import Banner from "@/components/banner/banner";
+import BasicLayout from "@/components/layout/basiclayout";
+import { Subtitle } from "@/components/text/subtitle";
 
 export default async function Donate() {
   return (
-    <div className="flex flex-col items-center pb-10">
+    <BasicLayout>
       <Banner title="Donate" location="/kcesar/6.jpg" alt="Rescuer pointing" />
-      <h1 className="text-5xl text-center">How to donate to ESAR!</h1>
-    </div>
+      <Subtitle content="Donate to ESAR!" />
+    </BasicLayout>
   );
 }

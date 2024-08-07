@@ -49,11 +49,6 @@ export default function Dropdown() {
             Donate
           </Link>
         </li>
-        <li>
-          <Link href="/emergency" className="">
-            Emergency
-          </Link>
-        </li>
       </ul>
     </div>
   );

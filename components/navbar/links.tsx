@@ -17,17 +17,22 @@ export default function Links() {
           <Link href="/members">Members</Link>
         </li>
         <li className="px-1">
-          <details>
-            <summary className="">Other</summary>
-            <ul className="p-2 bg-base-100 rounded-lg">
-              <li className="">
+          <div className="dropdown dropdown-bottom">
+            <div tabIndex={0} role="button" className="">
+              Other ˅
+            </div>
+            <ul
+              tabIndex={0}
+              className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+            >
+              <li>
                 <Link href="/truck">New Truck</Link>
               </li>
-              <li className="">
+              <li>
                 <Link href="/contact-us">Contact Us</Link>
               </li>
             </ul>
-          </details>
+          </div>
         </li>
       </ul>
     </div>

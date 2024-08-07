@@ -1,4 +1,4 @@
-import Link from "next/link";
+import BasicLink from "@/components/navigation/basiclink";
 
 export default function NewsItem({
   title,
@@ -21,9 +21,7 @@ export default function NewsItem({
         <div className="collapse-content">
           <p>{summary}</p>
           <br />
-          <Link href={location} className="btn bg-esar-green text-white">
-            Read More
-          </Link>
+          <BasicLink title="Read More" href={location} />
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
-import Banner from "../components/banner/banner";
+import Banner from "@/components/banner/banner";
 import Card from "./card";
+import BasicLayout from "@/components/layout/basiclayout";
 
 export default async function About() {
   let people = [
@@ -35,7 +36,7 @@ export default async function About() {
   ];
 
   return (
-    <div className="flex flex-col items-center pb-10">
+    <BasicLayout>
       <Banner
         title="About"
         location="/kcesar/4.jpg"
@@ -71,6 +72,6 @@ export default async function About() {
           ></Card>
         ))}
       </div>
-    </div>
+    </BasicLayout>
   );
 }

@@ -33,7 +33,7 @@ export default function NewsBlock() {
   ];
 
   return (
-    <div className="">
+    <div className="px-4">
       {articles.map((article) => (
         <NewsItem
           key={article.id}

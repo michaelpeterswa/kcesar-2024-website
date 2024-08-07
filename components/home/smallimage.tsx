@@ -9,7 +9,7 @@ export default function SmallImage({
 }) {
   return (
     <div className="flex justify-center py-5">
-      <div className="relative w-5/6 h-36">
+      <div className="relative w-5/6 h-[16rem]">
         <Image
           alt={alt}
           src={location}

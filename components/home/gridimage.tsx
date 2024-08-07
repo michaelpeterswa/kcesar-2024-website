@@ -8,8 +8,8 @@ export default function GridImage({
   alt: string;
 }) {
   return (
-    <div className="col-span-2">
-      <div className="relative h-96">
+    <div className="col-span-2 content-center">
+      <div className="relative h-[32rem]">
         <Image
           alt={alt}
           src={location}
