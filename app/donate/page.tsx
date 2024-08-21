@@ -1,10 +1,71 @@
-import Banner from "../components/banner/banner";
+import Banner from "@/components/banner/banner";
+import DonateCard, {
+  DonateCardProps,
+  PaypalDonateButton,
+  SimpleDonateLinkButton,
+} from "@/components/donate/card";
+import BasicLayout from "@/components/layout/basiclayout";
+import { Subtitle } from "@/components/text/subtitle";
+import { FaFacebook } from "react-icons/fa";
+
+let donateOptions: DonateCardProps[] = [
+  {
+    title: "Donate on Facebook",
+    text: (
+      <p>
+        ESAR Receives 100% of your donation via Facebook. Simply visit our page
+        click on the &apos;Donate&apos; button.
+      </p>
+    ),
+    imageHref: "/kcesar/fb-donate.png",
+    imageAlt: "ESAR Facebook Page showing donate button",
+    showButton: true,
+    button: (
+      <SimpleDonateLinkButton
+        href="https://www.facebook.com/kingcountyesar/"
+        buttonIcon={<FaFacebook className="w-5 h-5" />}
+      />
+    ),
+  },
+  {
+    title: "Donate via PayPal",
+    text: (
+      <p>
+        Donate to ESAR via PayPal. You can use your PayPal account or a credit
+        card.
+      </p>
+    ),
+    imageHref: "/kcesar/paypal-donate.png",
+    imageAlt: "PayPal Donate Button",
+    showButton: true,
+    button: <PaypalDonateButton />,
+  },
+  {
+    title: "Donate by Mail",
+    text: (
+      <div>
+        <p>KCESAR</p>
+        <p>PO Box 40152</p>
+        <p>Bellevue, WA 98015</p>
+        <p>Tax ID #91-1433442</p>
+      </div>
+    ),
+    imageHref: "/kcesar/mail-donate.jpg",
+    imageAlt: "Photo by Joel Moysuh on Unsplash",
+    showButton: false,
+  },
+];
 
 export default async function Donate() {
   return (
-    <div className="flex flex-col items-center pb-10">
+    <BasicLayout>
       <Banner title="Donate" location="/kcesar/6.jpg" alt="Rescuer pointing" />
-      <h1 className="text-5xl text-center">How to donate to ESAR!</h1>
-    </div>
+      <Subtitle content="Here's a few easy ways to donate!" />
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 px-20 mt-10">
+        {donateOptions.map((option, idx) => (
+          <DonateCard key={idx} props={option} />
+        ))}
+      </div>
+    </BasicLayout>
   );
 }

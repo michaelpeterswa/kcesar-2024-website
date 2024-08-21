@@ -1,12 +1,10 @@
-import React from "react";
-import Stats from "./home/stats";
-import Video from "./home/video";
-import Hero from "./home/hero";
-import GridImage from "./home/gridimage";
-import GridText from "./home/gridtext";
-import SmallImage from "./home/smallimage";
-import Link from "next/link";
-import NewsBlock from "./home/newsblock";
+import Stats from "@/components/home/stats";
+import Hero from "@/components/home/hero";
+import GridText from "@/components/home/gridtext";
+import SmallImage from "@/components/home/smallimage";
+import NewsBlock from "@/components/home/newsblock";
+import GridImage from "@/components/home/gridimage";
+import Video from "@/components/home/video";
 
 export default function Home() {
   return (
@@ -95,29 +93,23 @@ export default function Home() {
               />
             </div>
 
-            <div className="divider py-10"></div>
-            <div className="p-4 py-16">
+            <div className="divider pt-10"></div>
+            <div className="p-8">
               <h1 className="font-bold">KCESAR by the numbers:</h1>
             </div>
             <div className="md:grid grid-cols-3 gap-4 place-items-stretch hidden">
-              <div className="">
-                <Stats number={150} description="Missions per Year" />
-              </div>
-              <div className=" ">
-                <Stats number={50000} description="Mission Hours" />
-              </div>
-              <div className="">
-                <Stats number={500} description="Volunteers" />
-              </div>
+              <Stats number={150} description="Missions per Year" />
+              <Stats number={50000} description="Mission Hours" />
+              <Stats number={500} description="Volunteers" />
             </div>
-            <div className="md:hidden grid-cols-1 place-items-stretch grid ">
+            <div className="md:hidden grid-cols-1 place-items-stretch grid">
               <Stats number={150} description="Searches per Year" />
               <div className="divider"></div>
               <Stats number={10000} description="Hours" />
               <div className="divider"></div>
               <Stats number={500} description="Volunteers" />
             </div>
-            <div className="divider py-10"></div>
+            <div className="divider"></div>
             <h1 className="font-bold pb-3">KCESAR in the news:</h1>
             <div className="container mx-auto">
               <NewsBlock />
