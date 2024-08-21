@@ -3,34 +3,32 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="h-screen flex text-center items-center justify-center -translate-y-12">
-      <div className="max-w-6xl p-10">
-        <Image
-          alt="Tailwind CSS Navbar component"
-          src="/kcesar/logo_kcesar_300x300.png"
-          width={200}
-          height={200}
-          priority={true}
-          className="drop-shadow pb-10 inline-block"
-        />
-        <h1 className="text-4xl md:text-7xl font-gin font-normal text-white drop-shadow tracking-wider">
+    <div className="h-screen flex text-center items-center justify-center -translate-y-16">
+      <div className="max-w-6xl pb-10 px-5">
+        <div className="relative w-[150px] h-[150px] md:w-[300px] md:h-[300px] mb-10 inline-block">
+          <Image
+            alt="Tailwind CSS Navbar component"
+            src="/kcesar/logo_kcesar_1280x1280.png"
+            fill={true}
+            priority={true}
+            className="drop-shadow-xl"
+          />
+        </div>
+        <h1 className="text-3xl md:text-7xl font-gin font-normal drop-shadow-xl md:[text-shadow:_0_5px_10px_rgb(0_0_0_/_60%)] tracking-wider pb-10">
           <span className="block">King County Explorer</span>
           <span className="block">Search & Rescue</span>
         </h1>
-        <br />
-        <h1 className="text-xl md:text-3xl font-gin text-white drop-shadow tracking-widest">
+        <h1 className="text-lg md:text-3xl font-gin drop-shadow-xl md:[text-shadow:_0_2px_10px_rgb(0_0_0_/_60%)] tracking-widest pb-5">
           Est. 1954 - King County, Washington
         </h1>
-        <br />
-        <p className="text-white text-sm md:text-lg">
+        <p className="text-sm md:text-lg pb-10 drop-shadow-xl md:[text-shadow:_0_1px_4px_rgb(0_0_0_/_60%)]">
           King County Explorer Search & Rescue is one of the earliest Search &
           Rescue organizations established in the United States and the largest
           of eight member-units of the King County Search & Rescue Association.
         </p>
-        <br />
         <Link
           href="/join-us"
-          className="btn bg-esar-green text-white border-none"
+          className="btn bg-esar-green text-white border-none drop-shadow-xl"
         >
           Join Us
         </Link>

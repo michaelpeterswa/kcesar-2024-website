@@ -49,7 +49,7 @@ export default async function BasicTrainingOverview() {
         copy of the Basic Training Orientation Packet."
       />
       <BasicImage location="/kcesar/5.jpg" alt="Rescuers looking at a map" />
-      <br />
+      <div className="divider py-10"></div>
       <Subtitle content="Training Materials:" />
       <br />
       <BasicLink href="/join-us/training-materials" title="Download Here" />

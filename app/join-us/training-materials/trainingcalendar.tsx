@@ -6,9 +6,9 @@ export default function TrainingCalendar({
   sessions: JoinedSession[];
 }) {
   return (
-    <div className="overflow-x-auto bg-slate-200 text-black rounded-xl">
+    <div className="overflow-x-auto bg-base-300 rounded-xl">
       <table className="table">
-        <thead className="text-black">
+        <thead>
           <tr>
             <th>Course Name</th>
             <th>Date</th>
@@ -25,7 +25,7 @@ export default function TrainingCalendar({
               <td>
                 {session.location.google_maps_url ? (
                   <a
-                    className="underline text-blue-900"
+                    className="underline text-blue-400"
                     href={session.location.google_maps_url}
                   >
                     {session.location.name}

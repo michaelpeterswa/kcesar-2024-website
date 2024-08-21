@@ -13,3 +13,10 @@
     @apply text-sm lg:text-lg;
   }
 }
+
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: 100vh;
+    max-height: -webkit-fill-available !important;
+  }
+}

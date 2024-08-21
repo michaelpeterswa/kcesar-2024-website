@@ -14,7 +14,14 @@ export default function Stats({
       <div>
         <div className="text-center">
           <span className="font-komet text-6xl block pb-4">
-            <CountUp delay={2} start={0} end={number.valueOf()} duration={4} />+
+            <CountUp
+              start={0}
+              end={number.valueOf()}
+              duration={4}
+              scrollSpyDelay={500}
+              enableScrollSpy
+            />
+            +
           </span>
           <span className="font-komet text-2xl block">{description}</span>
         </div>

@@ -1,10 +1,10 @@
 import Stats from "@/components/home/stats";
-import Video from "@/components/home/video";
 import Hero from "@/components/home/hero";
 import GridText from "@/components/home/gridtext";
 import SmallImage from "@/components/home/smallimage";
 import NewsBlock from "@/components/home/newsblock";
 import GridImage from "@/components/home/gridimage";
+import Video from "@/components/home/video";
 
 export default function Home() {
   return (

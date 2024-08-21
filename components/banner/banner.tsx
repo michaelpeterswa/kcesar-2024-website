@@ -23,7 +23,7 @@ export default function Banner({
         />
       </div>
       <div className="absolute z-10 -mt-52 w-full">
-        <h1 className="text-6xl font-bold text-center tracking-widest text-white">
+        <h1 className="text-6xl font-bold text-center tracking-widest">
           {title}
         </h1>
       </div>

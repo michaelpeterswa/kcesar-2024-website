@@ -30,12 +30,6 @@ export default function Dropdown() {
           <Link href="/join-us">Join Us</Link>
         </li>
         <li className="">
-          <Link href="/members">Members</Link>
-        </li>
-        <li className="">
-          <Link href="/safety-tips">Safety Tips</Link>
-        </li>
-        <li className="">
           <Link href="/about">About</Link>
         </li>
         <li className="">

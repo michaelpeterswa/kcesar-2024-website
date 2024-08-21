@@ -37,7 +37,11 @@ export default async function TrainingMaterials() {
           href="https://calendar.google.com/calendar/embed?src=kcesar.org_4r2brjkoml90hilp9h73t2lgno%40group.calendar.google.com&ctz=America%2FLos_Angeles"
         />
       </div>
-      <TrainingCalendar sessions={trainingSessions} />
+      <div className="divider py-10"></div>
+      <Subtitle content="Training Calendar" />
+      <div className="p-5">
+        <TrainingCalendar sessions={trainingSessions} />
+      </div>
     </BasicLayout>
   );
 }

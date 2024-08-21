@@ -6,32 +6,39 @@ import BasicLayout from "@/components/layout/basiclayout";
 export default async function About() {
   let people = [
     {
-      personName: "John Doe",
-      title: "Director of Direction",
-      location: "",
-      alt: "",
-      email: "example@example.com",
+      personName: "Valon Miller",
+      title: "President",
+      location: "/kcesar/middle-fork.jpg",
+      alt: "Photo by Dominic Hampton on Unsplash",
+      email: "president@kcesar.org",
     },
     {
-      personName: "Kerry Doe",
-      title: "Director of Injuries",
-      location: "",
-      alt: "",
-      email: "example@example.com",
+      personName: "Brian Swett",
+      title: "Director of Operations",
+      location: "/kcesar/middle-fork.jpg",
+      alt: "Photo by Dominic Hampton on Unsplash",
+      email: "operations@kcesar.org",
     },
     {
-      personName: "Terry Doe",
-      title: "Director of Rescues",
-      location: "",
-      alt: "",
-      email: "example@example.com",
+      personName: "Edmund Tse",
+      title: "Treasurer",
+      location: "/kcesar/middle-fork.jpg",
+      alt: "Photo by Dominic Hampton on Unsplash",
+      email: "treasurer@kcesar.org",
     },
     {
-      personName: "Michael Peters",
-      title: "Website Guy",
-      location: "",
-      alt: "",
-      email: "example@example.com",
+      personName: "Amber Cosand",
+      title: "Secretary",
+      location: "/kcesar/middle-fork.jpg",
+      alt: "Photo by Dominic Hampton on Unsplash",
+      email: "secretary@kcesar.org",
+    },
+    {
+      personName: "Nancy Ward",
+      title: "Director of Training",
+      location: "/kcesar/middle-fork.jpg",
+      alt: "Photo by Dominic Hampton on Unsplash",
+      email: "training@kcesar.org",
     },
   ];
 
@@ -54,7 +61,7 @@ export default async function About() {
         member-units of the King County Search & Rescue Association (KCSARA) and
         accept both adult and youth members each training season.
       </p>
-      <Link href="/about/history" className="btn bg-esar-green text-white mt-8">
+      <Link href="/about/history" className="btn bg-esar-green mt-8">
         Our History
       </Link>
       <div className="divider py-10"></div>
@@ -67,8 +74,8 @@ export default async function About() {
             personName={person.personName}
             title={person.title}
             email={person.email}
-            location=""
-            alt=""
+            location={person.location}
+            alt={person.alt}
           ></Card>
         ))}
       </div>
