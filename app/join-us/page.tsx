@@ -1,9 +1,9 @@
 import Banner from "@/components/banner/banner";
 import CenteredText from "@/components/text/centeredtext";
-import Link from "next/link";
 import { Subtitle } from "@/components/text/subtitle";
 import BasicImage from "@/components/image/basicimage";
 import BasicLayout from "@/components/layout/basiclayout";
+import BasicLink from "@/components/navigation/basiclink";
 
 export default async function JoinUs() {
   return (
@@ -26,23 +26,24 @@ export default async function JoinUs() {
       <CenteredText
         content="In order to ensure that new members have the knowledge and skills
         necessary to positively and safely contribute to search and rescue
-        operations prospective members must complete King County ESAR'S
+        operations, prospective members must complete King County ESAR'S
         Basic Training program."
       />
       <BasicImage location="/kcesar/13.jpg" alt="Rescuers looking at a map" />
       <CenteredText
-        content="They must also provide documentation for several independently obtained
-        certifications and complete core-competency training as prescribed by
-        the Washington State Department of Emergency Management and the King
-        County Sheriff's Office."
+        content="The 170+ hour Basic Training program includes a combination of classroom, 
+        overnight field courses, online certifications and more.  Once training is complete, our members 
+        are field-qualified Search and Rescue responders under the Washington State Department of Emergency 
+        Management and the King County Sheriff's Office.  Members maintain their training and certifications 
+        through mission participation and continuing education. "
       />
       <h2>Interested? Continue learning below:</h2>
-      <Link
-        href="/join-us/basic-training-overview"
-        className="btn bg-esar-green mt-8"
-      >
-        Basic Training Overview
-      </Link>
+      <div className="mt-8">
+        <BasicLink
+          title="Basic Training Overview"
+          href="/join-us/basic-training-overview"
+        />
+      </div>
     </BasicLayout>
   );
 }

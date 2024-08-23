@@ -38,7 +38,7 @@ export default async function TrainingMaterials() {
         />
       </div>
       <div className="divider py-10"></div>
-      <Subtitle content="Training Calendar" />
+      <Subtitle content="2024-2025 Training Season" />
       <div className="p-5">
         <TrainingCalendar sessions={trainingSessions} />
       </div>

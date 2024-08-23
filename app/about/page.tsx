@@ -57,9 +57,9 @@ export default async function About() {
         Rescue comes from ESAR&apos;s affiliation with the Boy Scouts of America
         Learning for Life program. King County ESAR still maintains a Post with
         the Boy Scouts of America but we are not as directly associated with
-        Scouting as we once were. Today, we are the largest of eight
-        member-units of the King County Search & Rescue Association (KCSARA) and
-        accept both adult and youth members each training season.
+        Scouting as we once were. Today, we are the largest of nine member-units
+        of the King County Search & Rescue Association (KCSARA) and accept both
+        adult and youth members each training season.
       </p>
       <Link href="/about/history" className="btn bg-esar-green mt-8">
         Our History
