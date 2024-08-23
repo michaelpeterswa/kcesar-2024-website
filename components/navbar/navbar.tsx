@@ -1,10 +1,8 @@
 "use client";
-
-import Dropdown from "./dropdown";
 import Links from "./links";
 import EndButtons from "./end-buttons";
-import Logo from "./logo";
 import { useState, useEffect } from "react";
+import Drawer from "./drawer";
 
 export default function Navbar() {
   const [navbarTransparent, setNavbarTransparent] = useState(true);
@@ -33,8 +31,7 @@ export default function Navbar() {
   return (
     <div className={navbarTransparent ? transparentCss : solidCss}>
       <div className="navbar-start">
-        <Dropdown />
-        <Logo />
+        <Drawer />
       </div>
       <Links />
       <div className="navbar-end">

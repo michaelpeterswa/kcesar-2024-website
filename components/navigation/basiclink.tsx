@@ -8,7 +8,7 @@ export default function BasicLink({
   href: string;
 }) {
   return (
-    <Link href={href} className="btn bg-esar-green text-white">
+    <Link href={href} className="btn bg-esar-green">
       {title}
     </Link>
   );

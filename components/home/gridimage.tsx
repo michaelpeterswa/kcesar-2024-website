@@ -13,6 +13,7 @@ export default function GridImage({
         <Image
           alt={alt}
           src={location}
+          sizes="100vw"
           fill={true}
           className="brightness-90 object-cover overflow-hidden rounded-xl"
         />

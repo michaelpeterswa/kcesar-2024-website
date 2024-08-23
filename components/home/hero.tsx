@@ -5,16 +5,16 @@ export default function Hero() {
   return (
     <div className="h-screen flex text-center items-center justify-center -translate-y-16">
       <div className="max-w-6xl pb-10 px-5">
-        <div className="relative w-[150px] h-[150px] md:w-[300px] md:h-[300px] mb-10 inline-block">
+        <div className="relative w-[150px] h-[150px] md:w-[200px] md:h-[200px] mt-10 md:mt-24 mb-10 inline-block">
           <Image
             alt="Tailwind CSS Navbar component"
-            src="/kcesar/logo_kcesar_1280x1280.png"
+            src="/kcesar/logos/logo_kcesar_1280x1280.png"
             fill={true}
             priority={true}
             className="drop-shadow-xl"
           />
         </div>
-        <h1 className="text-3xl md:text-7xl font-gin font-normal drop-shadow-xl md:[text-shadow:_0_5px_10px_rgb(0_0_0_/_60%)] tracking-wider pb-10">
+        <h1 className="text-3xl md:text-7xl font-gin font-normal drop-shadow-xl md:[text-shadow:_0_5px_10px_rgb(0_0_0_/_60%)] tracking-wider pb-5 md:pb-10">
           <span className="block">King County Explorer</span>
           <span className="block">Search & Rescue</span>
         </h1>
@@ -28,7 +28,7 @@ export default function Hero() {
         </p>
         <Link
           href="/join-us"
-          className="btn bg-esar-green text-white border-none drop-shadow-xl"
+          className="btn bg-esar-green border-none drop-shadow-xl"
         >
           Join Us
         </Link>

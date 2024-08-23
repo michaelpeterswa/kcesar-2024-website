@@ -27,7 +27,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/kcesar/favicon.ico" />
       </head>
       <body className={finlandica.className}>
-        <div className="text-white">
+        <div>
           <Navbar />
           {children}
           <Footer />

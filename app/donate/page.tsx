@@ -17,7 +17,7 @@ let donateOptions: DonateCardProps[] = [
         click on the &apos;Donate&apos; button.
       </p>
     ),
-    imageHref: "/kcesar/fb-donate.png",
+    imageHref: "/kcesar/donate/fb-donate.png",
     imageAlt: "ESAR Facebook Page showing donate button",
     showButton: true,
     button: (
@@ -35,7 +35,7 @@ let donateOptions: DonateCardProps[] = [
         card.
       </p>
     ),
-    imageHref: "/kcesar/paypal-donate.png",
+    imageHref: "/kcesar/donate/paypal-donate.png",
     imageAlt: "PayPal Donate Button",
     showButton: true,
     button: <PaypalDonateButton />,
@@ -50,7 +50,7 @@ let donateOptions: DonateCardProps[] = [
         <p>Tax ID #91-1433442</p>
       </div>
     ),
-    imageHref: "/kcesar/mail-donate.jpg",
+    imageHref: "/kcesar/donate/mail-donate.jpg",
     imageAlt: "Photo by Joel Moysuh on Unsplash",
     showButton: false,
   },
@@ -61,7 +61,7 @@ export default async function Donate() {
     <BasicLayout>
       <Banner title="Donate" location="/kcesar/6.jpg" alt="Rescuer pointing" />
       <Subtitle content="Here's a few easy ways to donate!" />
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 px-20 mt-10">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 px-10 mt-10">
         {donateOptions.map((option, idx) => (
           <DonateCard key={idx} props={option} />
         ))}

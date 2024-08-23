@@ -67,7 +67,7 @@ export default async function About() {
       <div className="divider py-10"></div>
       <h2>Our Leadership</h2>
       <br />
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 px-20">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 px-10">
         {people.map((person) => (
           <Card
             key={person.personName}

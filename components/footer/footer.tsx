@@ -9,7 +9,7 @@ export default function Footer() {
         <h1 className="font-bold text-2xl">Support us to save lives.</h1>
         <Image
           alt="Tailwind CSS Navbar component"
-          src="/kcesar/logo_kcesar_300x300.png"
+          src="/kcesar/logos/logo_kcesar_300x300.png"
           width={150}
           height={150}
           priority={true}
