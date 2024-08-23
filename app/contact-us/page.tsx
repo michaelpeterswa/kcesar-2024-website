@@ -1,6 +1,7 @@
 import Banner from "@/components/banner/banner";
 import BasicLayout from "@/components/layout/basiclayout";
-import { Subtitle } from "@/components/text/subtitle";
+import Link from "next/link";
+import { FaEnvelope } from "react-icons/fa6";
 
 export default async function ContactUs() {
   let pageTitle = "Contact Us";
@@ -11,7 +12,139 @@ export default async function ContactUs() {
         location="/kcesar/2.jpg"
         alt="Rescuers walking up a snowy trail"
       />
-      <Subtitle content={pageTitle} />
+      <div className="flex flex-col text-center justify-center pb-5">
+        <h2 className="pb-5">Reporting an emergency?</h2>
+        <h1 className="text-red-600">Call 911</h1>
+        <p className="pt-5">
+          King County Search & Rescue Resources must be requested by the King
+          County Sheriff&apos;s Office SAR Coordinator.
+        </p>
+      </div>
+      <div className="divider"></div>
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 px-10 mt-10">
+        <div className="card bg-base-200 w-96 shadow-xl">
+          <div className="card-body">
+            <h2 className="card-title text-3xl">KCESAR Contacts</h2>
+            <h3>President</h3>
+            <Link
+              href={`mailto:president@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              president@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+            <h3>Board of Directors</h3>
+            <Link
+              href={`mailto:bod@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              bod@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+            <h3>Public Information Officer</h3>
+            <Link
+              href={`mailto:pio@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              pio@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+          </div>
+        </div>
+        <div className="card bg-base-200 w-96 shadow-xl">
+          <div className="card-body">
+            <h2 className="card-title text-3xl">Training Contacts</h2>
+            <h3>Training Admin</h3>
+            <Link
+              href={`mailto:training.admin@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              training.admin@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+            <h3>Course Directors</h3>
+            <Link
+              href={`mailto:courseA@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              courseA@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+            <Link
+              href={`mailto:courseB@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              courseB@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+            <Link
+              href={`mailto:courseC@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              courseC@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+            <Link
+              href={`mailto:course1@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              course1@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+            <Link
+              href={`mailto:course2@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              course2@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+            <Link
+              href={`mailto:course3@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              course3@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+          </div>
+        </div>
+        <div className="card bg-base-200 w-96 shadow-xl">
+          <div className="card-body">
+            <h2 className="card-title text-3xl">Other Contacts</h2>
+            <h3>Recruiting Coordinator</h3>
+            <Link
+              href={`mailto:recruiting@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              recruiting@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+            <h3>Youth Coordinator</h3>
+            <Link
+              href={`mailto:youth@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              youth@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+            <h3>Fundraising Coordinator</h3>
+            <Link
+              href={`mailto:fundraising@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              fundraising@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+            <h3>Public Events Coordinator</h3>
+            <Link
+              href={`mailto:events@kcesar.org`}
+              className="text-blue-600 hover:text-blue-400"
+            >
+              events@kcesar.org
+              <FaEnvelope className="h-6 w-6 inline-block ml-3" />
+            </Link>
+          </div>
+        </div>
+      </div>
     </BasicLayout>
   );
 }

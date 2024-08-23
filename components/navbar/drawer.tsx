@@ -41,13 +41,18 @@ export default function Drawer() {
             </Link>
           </li>
           <li className="hover:bg-esar-green hover:text-white rounded-xl">
+            <Link href="/donate" onClick={onLinkClick}>
+              <h3>Donate</h3>
+            </Link>
+          </li>
+          <li className="hover:bg-esar-green hover:text-white rounded-xl">
             <Link href="/join-us" onClick={onLinkClick}>
               <h3>Join Us</h3>
             </Link>
           </li>
           <li className="hover:bg-esar-green hover:text-white rounded-xl">
             <Link href="/about" onClick={onLinkClick}>
-              <h3>About</h3>
+              <h3>About Us</h3>
             </Link>
           </li>
           <li className="hover:bg-esar-green hover:text-white rounded-xl">
@@ -60,11 +65,7 @@ export default function Drawer() {
               <h3>Contact Us</h3>
             </Link>
           </li>
-          <li className="hover:bg-esar-green hover:text-white rounded-xl">
-            <Link href="/donate" onClick={onLinkClick}>
-              <h3>Donate</h3>
-            </Link>
-          </li>
+
           <li className="flex-grow pointer-events-none bg-inherit" />
           <li className="pointer-events-none">
             <div className="flex justify-center items-center p-4">
