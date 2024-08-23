@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
+import BasicLink from "../navigation/basiclink";
 
 export default function Hero() {
   return (
-    <div className="h-screen flex text-center items-center justify-center -translate-y-16">
+    <div className="h-screen flex text-center items-center justify-center text-white -translate-y-16">
       <div className="max-w-6xl pb-10 px-5">
         <div className="relative w-[150px] h-[150px] md:w-[200px] md:h-[200px] mt-10 md:mt-24 mb-10 inline-block">
           <Image
@@ -24,14 +24,9 @@ export default function Hero() {
         <p className="text-sm md:text-lg pb-10 drop-shadow-xl md:[text-shadow:_0_1px_4px_rgb(0_0_0_/_60%)]">
           King County Explorer Search & Rescue is one of the earliest Search &
           Rescue organizations established in the United States and the largest
-          of eight member-units of the King County Search & Rescue Association.
+          of nine member-units of the King County Search & Rescue Association.
         </p>
-        <Link
-          href="/join-us"
-          className="btn bg-esar-green border-none drop-shadow-xl"
-        >
-          Join Us
-        </Link>
+        <BasicLink title="Join Us" href="/join-us" />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="footer footer-center bg-esar-green py-5">
+    <footer className="footer footer-center bg-esar-green text-white py-5">
       <aside>
         <h1 className="font-bold text-2xl">Support us to save lives.</h1>
         <Image
