@@ -39,7 +39,7 @@ export default async function JoinUs() {
       <h2>Interested? Continue learning below:</h2>
       <Link
         href="/join-us/basic-training-overview"
-        className="btn bg-esar-green mt-8 text-white"
+        className="btn bg-esar-green mt-8"
       >
         Basic Training Overview
       </Link>

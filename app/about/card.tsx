@@ -16,7 +16,7 @@ export default function Card({
   alt: string;
 }) {
   return (
-    <div className="card card-compact w-72 bg-base-100 shadow-xl">
+    <div className="card card-compact w-56 md:w-72 bg-base-100 shadow-xl">
       <figure>
         <Image
           src={location}

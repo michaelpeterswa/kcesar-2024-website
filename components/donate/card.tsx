@@ -13,14 +13,14 @@ export type DonateCardProps = {
 
 export default function DonateCard({ props }: { props: DonateCardProps }) {
   return (
-    <div className="card bg-base-300 w-96 shadow-xl">
+    <div className="card bg-base-300 w-72 md:w-96 shadow-xl">
       <figure>
         <Image
           src={props.imageHref}
           alt={props.imageAlt}
           height={500}
           width={500}
-          className="brightness-75 object-cover max-w-96 max-h-[200px]"
+          className="brightness-75 object-cover max-w-72 md:max-w-96 max-h-[200px]"
         />
       </figure>
       <div className="card-body">
@@ -43,7 +43,7 @@ export function SimpleDonateLinkButton({
 }) {
   return (
     <a href={href}>
-      <div className="btn bg-esar-green text-white flex justify-center">
+      <div className="btn bg-esar-green flex justify-center">
         Donate Now {buttonIcon}
       </div>
     </a>
@@ -59,7 +59,7 @@ export function PaypalDonateButton() {
     >
       <input type="hidden" name="cmd" value="_s-xclick" />
       <input type="hidden" name="hosted_button_id" value="6R8CW7RS2HRBN" />
-      <button className="btn bg-esar-green flex text-white justify-center">
+      <button className="btn bg-esar-green flex justify-center">
         Donate Now <FaPaypal className="w-5 h-5" />
       </button>
     </form>
