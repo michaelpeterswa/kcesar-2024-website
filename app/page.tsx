@@ -58,8 +58,8 @@ export default function Home() {
 
             <div className="lg:hidden">
               <SmallImage
-                location="/kcesar/1.jpg"
-                alt="Rescuers in van pointing at TV with map"
+                location="/kcesar/advanced-litter/advanced-litter-19.jpg"
+                alt="Rescuers using a litter to take subject down a trail"
               />
               <GridText
                 title="Who We Are"
@@ -70,8 +70,8 @@ export default function Home() {
               <div className="divider"></div>
 
               <SmallImage
-                location="/kcesar/7.jpg"
-                alt="KCESAR logo on a jacket"
+                location="/kcesar/advanced-litter/advanced-litter-41.jpg"
+                alt="Rescuers packing out a subject in a litter in the forest"
               />
               <GridText
                 title="Donate"
@@ -82,8 +82,8 @@ export default function Home() {
               <div className="divider"></div>
 
               <SmallImage
-                location="/kcesar/11.jpg"
-                alt="Rescuers pointing at a map outside"
+                location="/kcesar/advanced-litter/advanced-litter-4.jpg"
+                alt="Rescuers preparing the litter to take a subject down a trail"
               />
               <GridText
                 title="Join Us"
