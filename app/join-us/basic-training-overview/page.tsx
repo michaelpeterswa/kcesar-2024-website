@@ -1,17 +1,17 @@
 import Banner from "@/components/banner/banner";
-import BasicImage from "@/components/image/basicimage";
 import BasicLink from "@/components/navigation/basiclink";
 import BasicLayout from "@/components/layout/basiclayout";
 import CenteredText from "@/components/text/centeredtext";
 import { Subtitle } from "@/components/text/subtitle";
+import { BasicImageTall } from "@/components/image/basicimage";
 
 export default async function BasicTrainingOverview() {
   return (
     <BasicLayout>
       <Banner
         title="Join Us"
-        location="/kcesar/8.jpg"
-        alt="Rescuers walking in field"
+        location="/kcesar/advanced-litter/advanced-litter-1.jpg"
+        alt="Rescuers using a litter to evacuate a subject"
       />
       <Subtitle content="Basic Training Overview" />
       <CenteredText
@@ -21,9 +21,9 @@ export default async function BasicTrainingOverview() {
         wilderness navigation, survival skills, search method theory, first aid,
         and evidence search procedures."
       />
-      <BasicImage
-        location="/kcesar/12.jpg"
-        alt="Rescuers discussing around a map"
+      <BasicImageTall
+        location="/kcesar/advanced-litter/advanced-litter-3.jpg"
+        alt="Rescuers preparing a litter"
       />
       <CenteredText
         content="Basic Training begins in July and runs through April. It is purposefully
@@ -32,7 +32,10 @@ export default async function BasicTrainingOverview() {
         Training may involve snow, ice, wind, rain, and other unpleasant
         situations."
       />
-      <BasicImage location="/kcesar/3.jpg" alt="Rescuers looking at a map" />
+      <BasicImageTall
+        location="/kcesar/advanced-litter/advanced-litter-7.jpg"
+        alt="Rescuers evacuating a subject"
+      />
       <CenteredText
         content="Trainees are expected to understand how to prevent hypothermia, to be
         aware of the conditions around them, and to take care of themselves and
@@ -41,14 +44,20 @@ export default async function BasicTrainingOverview() {
         sessions, and a combination of homework and independent on-line
         learning."
       />
-      <BasicImage location="/kcesar/6.jpg" alt="Rescuers looking at a map" />
+      <BasicImageTall
+        location="/kcesar/advanced-litter/advanced-litter-13.jpg"
+        alt="Rescuers lowering a subject down the hillside"
+      />
       <CenteredText
         content="All courses are pass/fail and some trainees may need to repeat one or
         more additional weekends to successfully complete the series. For
         additional information about the training and courses, please download a
         copy of the Basic Training Orientation Packet."
       />
-      <BasicImage location="/kcesar/5.jpg" alt="Rescuers looking at a map" />
+      <BasicImageTall
+        location="/kcesar/advanced-litter/advanced-litter-33.jpg"
+        alt="Rescuers moving the litter down the trail"
+      />
       <div className="divider py-10"></div>
       <Subtitle content="Training Materials:" />
       <br />

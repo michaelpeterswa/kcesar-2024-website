@@ -46,8 +46,8 @@ export default async function About() {
     <BasicLayout>
       <Banner
         title="About"
-        location="/kcesar/4.jpg"
-        alt="Rescuers walking down a trail with a litter"
+        location="/kcesar/advanced-litter/advanced-litter-8.jpg"
+        alt="Rescuers standing"
       />
       <h2>Who We Are</h2>
       <p className="text-xl pt-8 text-justify px-20 container">

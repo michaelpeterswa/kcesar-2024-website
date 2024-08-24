@@ -10,8 +10,8 @@ export default async function JoinUs() {
     <BasicLayout>
       <Banner
         title="Join Us"
-        location="/kcesar/8.jpg"
-        alt="Rescuers walking in field"
+        location="/kcesar/advanced-litter/advanced-litter-1.jpg"
+        alt="Rescuers using a litter to evacuate a subject"
       />
       <Subtitle content="Joining King County Explorer Search & Rescue" />
       <CenteredText
@@ -20,8 +20,8 @@ export default async function JoinUs() {
         outdoors, and are willing to respond to emergencies whenever possible."
       />
       <BasicImage
-        location="/kcesar/5.jpg"
-        alt="Rescuers walking up a trail with a litter"
+        location="/kcesar/advanced-litter/advanced-litter-2.jpg"
+        alt="Rescuers discussing around a litter"
       />
       <CenteredText
         content="In order to ensure that new members have the knowledge and skills
@@ -29,7 +29,10 @@ export default async function JoinUs() {
         operations, prospective members must complete King County ESAR'S
         Basic Training program."
       />
-      <BasicImage location="/kcesar/13.jpg" alt="Rescuers looking at a map" />
+      <BasicImage
+        location="/kcesar/advanced-litter/advanced-litter-23.jpg"
+        alt="Rescuers above preparing to lower a litter"
+      />
       <CenteredText
         content="The 170+ hour Basic Training program includes a combination of classroom, 
         overnight field courses, online certifications and more.  Once training is complete, our members 

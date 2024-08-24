@@ -16,12 +16,12 @@ export default function Home() {
         </div>
       </div>
       <div className="">
-        <div className="flex min-w-full justify-items-center content-center text-center bg-base-100 py-10">
+        <div className="flex min-w-full justify-items-center content-center text-center bg-base-100 px-10 py-10">
           <div className="container mx-auto">
-            <div className="hidden grid-cols-3 md:grid gap-4 gap-y-10 place-items-stretch">
+            <div className="hidden grid-cols-3 lg:grid gap-4 gap-y-10 place-items-stretch">
               <GridImage
-                location="/kcesar/1.jpg"
-                alt="Rescuers in van pointing at TV with map"
+                location="/kcesar/advanced-litter/advanced-litter-19.jpg"
+                alt="Rescuers using a litter to take subject down a trail"
               />
 
               <GridText
@@ -39,13 +39,13 @@ export default function Home() {
               />
 
               <GridImage
-                location="/kcesar/7.jpg"
-                alt="KCESAR logo on a jacket"
+                location="/kcesar/advanced-litter/advanced-litter-41.jpg"
+                alt="Rescuers packing out a subject in a litter in the forest"
               />
 
               <GridImage
-                location="/kcesar/11.jpg"
-                alt="Rescuers pointing at a map outside"
+                location="/kcesar/advanced-litter/advanced-litter-4.jpg"
+                alt="Rescuers preparing the litter to take a subject down a trail"
               />
 
               <GridText
@@ -56,7 +56,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <SmallImage
                 location="/kcesar/1.jpg"
                 alt="Rescuers in van pointing at TV with map"
@@ -97,12 +97,12 @@ export default function Home() {
             <div className="p-8">
               <h1 className="font-bold">KCESAR by the numbers:</h1>
             </div>
-            <div className="md:grid grid-cols-3 gap-4 place-items-stretch hidden">
+            <div className="lg:grid grid-cols-3 gap-4 place-items-stretch hidden">
               <Stats number={150} description="Missions per Year" />
               <Stats number={50000} description="Mission Hours" />
               <Stats number={500} description="Volunteers" />
             </div>
-            <div className="md:hidden grid-cols-1 place-items-stretch grid">
+            <div className="lg:hidden grid-cols-1 place-items-stretch grid">
               <Stats number={150} description="Searches per Year" />
               <div className="divider"></div>
               <Stats number={10000} description="Hours" />

@@ -9,7 +9,7 @@ export default function GridImage({
 }) {
   return (
     <div className="col-span-2 content-center">
-      <div className="relative h-[32rem]">
+      <div className="relative h-[24rem]">
         <Image
           alt={alt}
           src={location}
