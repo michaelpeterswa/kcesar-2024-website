@@ -8,7 +8,7 @@ export default function BasicImage({
   alt: string;
 }) {
   return (
-    <div className="relative h-80 w-3/4">
+    <div className="relative h-80 w-3/4 max-w-5xl">
       <Image
         alt={alt}
         src={location}
@@ -27,7 +27,7 @@ export function BasicImageTall({
   alt: string;
 }) {
   return (
-    <div className="relative h-96 w-3/4">
+    <div className="relative h-96 w-3/4 max-w-5xl">
       <Image
         alt={alt}
         src={location}

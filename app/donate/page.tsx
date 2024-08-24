@@ -59,7 +59,11 @@ let donateOptions: DonateCardProps[] = [
 export default async function Donate() {
   return (
     <BasicLayout>
-      <Banner title="Donate" location="/kcesar/6.jpg" alt="Rescuer pointing" />
+      <Banner
+        title="Donate"
+        location="/kcesar/advanced-litter/advanced-litter-32.jpg"
+        alt="Rescuers navigating a litter over an obstacle"
+      />
       <Subtitle content="Here's a few easy ways to donate!" />
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 px-10 mt-10">
         {donateOptions.map((option, idx) => (

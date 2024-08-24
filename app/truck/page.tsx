@@ -9,8 +9,8 @@ export default async function Truck() {
     <BasicLayout>
       <Banner
         title="New Rescue Truck"
-        location="/kcesar/8.jpg"
-        alt="Rescuers walking in field"
+        location="/kcesar/advanced-litter/advanced-litter-12.jpg"
+        alt="Rescuers working on hillside"
       />
       <Subtitle content="Will you help us?" />
       <CenteredText content="We are raising funds to purchase a new rescue truck.  Please consider donating to help us reach our goal. A rescue truck is vital to the daily operations we conduct and helps support our leaders and teams in the field." />

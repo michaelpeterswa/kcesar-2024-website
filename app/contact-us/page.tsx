@@ -9,7 +9,7 @@ export default async function ContactUs() {
     <BasicLayout>
       <Banner
         title={pageTitle}
-        location="/kcesar/2.jpg"
+        location="/kcesar/advanced-litter/advanced-litter-47.jpg"
         alt="Rescuers walking up a snowy trail"
       />
       <div className="flex flex-col text-center justify-center pb-5">

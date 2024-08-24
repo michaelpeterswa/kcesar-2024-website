@@ -11,7 +11,7 @@ export default async function TrainingMaterials() {
     <BasicLayout>
       <Banner
         title="Join Us"
-        location="/kcesar/8.jpg"
+        location="/kcesar/advanced-litter/advanced-litter-1.jpg"
         alt="Rescuers walking in field"
       />
       <Subtitle content="Training Materials" />
