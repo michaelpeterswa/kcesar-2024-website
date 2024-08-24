@@ -2,6 +2,7 @@ import Link from "next/link";
 import Banner from "@/components/banner/banner";
 import Card from "./card";
 import BasicLayout from "@/components/layout/basiclayout";
+import { SubtitleNoUnderline } from "@/components/text/subtitle";
 
 export default async function About() {
   let people = [
@@ -20,6 +21,13 @@ export default async function About() {
       email: "operations@kcesar.org",
     },
     {
+      personName: "Nancy Ward",
+      title: "Director of Training",
+      location: "/kcesar/middle-fork.jpg",
+      alt: "Photo by Dominic Hampton on Unsplash",
+      email: "training@kcesar.org",
+    },
+    {
       personName: "Edmund Tse",
       title: "Treasurer",
       location: "/kcesar/middle-fork.jpg",
@@ -33,13 +41,6 @@ export default async function About() {
       alt: "Photo by Dominic Hampton on Unsplash",
       email: "secretary@kcesar.org",
     },
-    {
-      personName: "Nancy Ward",
-      title: "Director of Training",
-      location: "/kcesar/middle-fork.jpg",
-      alt: "Photo by Dominic Hampton on Unsplash",
-      email: "training@kcesar.org",
-    },
   ];
 
   return (
@@ -49,7 +50,7 @@ export default async function About() {
         location="/kcesar/advanced-litter/advanced-litter-8.jpg"
         alt="Rescuers standing"
       />
-      <h2>Who We Are</h2>
+      <SubtitleNoUnderline content="Who We Are" />
       <p className="text-xl pt-8 text-justify px-20 container">
         King County Explorer Search & Rescue was founded in 1954 as one of the
         first organized search and rescue teams in the country, and the first to
@@ -65,7 +66,7 @@ export default async function About() {
         Our History
       </Link>
       <div className="divider py-10"></div>
-      <h2>Our Leadership</h2>
+      <SubtitleNoUnderline content="Leadership" />
       <br />
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 px-10">
         {people.map((person) => (

@@ -1,6 +1,6 @@
 import Banner from "@/components/banner/banner";
 import CenteredText from "@/components/text/centeredtext";
-import { Subtitle } from "@/components/text/subtitle";
+import { Subtitle, SubtitleNoUnderline } from "@/components/text/subtitle";
 import BasicImage from "@/components/image/basicimage";
 import BasicLayout from "@/components/layout/basiclayout";
 import BasicLink from "@/components/navigation/basiclink";
@@ -40,7 +40,7 @@ export default async function JoinUs() {
         Management and the King County Sheriff's Office.  Members maintain their training and certifications 
         through mission participation and continuing education. "
       />
-      <h2>Interested? Continue learning below:</h2>
+      <SubtitleNoUnderline content="Interested? Continue learning below:" />
       <div className="mt-8">
         <BasicLink
           title="Basic Training Overview"
