@@ -17,7 +17,7 @@ export default function Footer() {
         />
         <p className="font-bold">
           King County Explorer Search & Rescue <br />
-          Providing search and rescue services to King County since 1954
+          Providing search & rescue services to King County since 1954
           <br />
           <br />
           King County Explorer Search & Rescue (ESAR) is a 501(c)(3) Volunteer
@@ -26,7 +26,7 @@ export default function Footer() {
           <br />
           EIN #91-1433442
         </p>
-        <p>© 2024 KCESAR • PO Box 1266 • North Bend, WA 98045</p>
+        <p>© 2024 KCESAR • PO Box 40152 • Bellevue, WA 98015</p>
       </aside>
       <nav>
         <div className="grid grid-flow-col gap-4">

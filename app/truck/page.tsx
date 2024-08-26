@@ -20,8 +20,8 @@ export default async function Truck() {
       />
       <div className="w-full h-[30rem] md:h-[50rem] p-10 flex justify-center">
         <iframe
-          className="w-5/6"
-          src="/kcesar/new_truck/rescue-truck-replacement-2024.pdf"
+          className="w-5/6 md:w-1/2"
+          src="/kcesar/new_truck/rescue-truck-replacement-2024.pdf#toolbar=0&navpanes=0&scrollbar=0"
         />
       </div>
     </BasicLayout>
