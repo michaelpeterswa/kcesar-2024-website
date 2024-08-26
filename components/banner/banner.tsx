@@ -19,6 +19,7 @@ export default function Banner({
           alt={alt}
           src={location}
           fill={true}
+          priority={true}
           className="object-cover overflow-hidden brightness-[0.6]"
         />
       </div>
