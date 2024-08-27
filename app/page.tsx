@@ -2,9 +2,9 @@ import Stats from "@/components/home/stats";
 import Hero from "@/components/home/hero";
 import GridText from "@/components/home/gridtext";
 import SmallImage from "@/components/home/smallimage";
-import NewsBlock from "@/components/home/newsblock";
 import GridImage from "@/components/home/gridimage";
 import Video from "@/components/home/video";
+import InstagramEmbed from "@/components/instagram/instagram";
 
 export default function Home() {
   return (
@@ -98,21 +98,21 @@ export default function Home() {
               <h1 className="font-bold">KCESAR by the numbers:</h1>
             </div>
             <div className="lg:grid grid-cols-3 gap-4 place-items-stretch hidden">
-              <Stats number={150} description="Missions per Year" />
-              <Stats number={50000} description="Mission Hours" />
-              <Stats number={500} description="Volunteers" />
+              <Stats number={125} description="Missions per Year" />
+              <Stats number={18000} description="Training Hours per Year" />
+              <Stats number={250} description="Volunteers" />
             </div>
             <div className="lg:hidden grid-cols-1 place-items-stretch grid">
-              <Stats number={150} description="Searches per Year" />
+              <Stats number={125} description="Missions per Year" />
               <div className="divider"></div>
-              <Stats number={10000} description="Hours" />
+              <Stats number={18000} description="Training Hours per Year" />
               <div className="divider"></div>
-              <Stats number={500} description="Volunteers" />
+              <Stats number={250} description="Volunteers" />
             </div>
             <div className="divider"></div>
-            <h1 className="font-bold pb-3">KCESAR in the news:</h1>
-            <div className="container mx-auto">
-              <NewsBlock />
+            <h1 className="font-bold pb-6">KCESAR on Instagram!</h1>
+            <div className="flex justify-center">
+              <InstagramEmbed />
             </div>
           </div>
         </div>

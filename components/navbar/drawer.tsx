@@ -41,6 +41,11 @@ export default function Drawer() {
             </Link>
           </li>
           <li className="hover:bg-esar-green hover:text-white rounded-xl">
+            <Link href="/about" onClick={onLinkClick}>
+              <h3>About Us</h3>
+            </Link>
+          </li>
+          <li className="hover:bg-esar-green hover:text-white rounded-xl">
             <Link href="/donate" onClick={onLinkClick}>
               <h3>Donate</h3>
             </Link>
@@ -48,16 +53,6 @@ export default function Drawer() {
           <li className="hover:bg-esar-green hover:text-white rounded-xl">
             <Link href="/join-us" onClick={onLinkClick}>
               <h3>Join Us</h3>
-            </Link>
-          </li>
-          <li className="hover:bg-esar-green hover:text-white rounded-xl">
-            <Link href="/about" onClick={onLinkClick}>
-              <h3>About Us</h3>
-            </Link>
-          </li>
-          <li className="hover:bg-esar-green hover:text-white rounded-xl">
-            <Link href="/truck" onClick={onLinkClick}>
-              <h3>New Truck</h3>
             </Link>
           </li>
           <li className="hover:bg-esar-green hover:text-white rounded-xl">
