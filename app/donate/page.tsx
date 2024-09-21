@@ -2,32 +2,12 @@ import Banner from "@/components/banner/banner";
 import DonateCard, {
   DonateCardProps,
   PaypalDonateButton,
-  SimpleDonateLinkButton,
 } from "@/components/donate/card";
 import BasicLayout from "@/components/layout/basiclayout";
 import BasicLink from "@/components/navigation/basiclink";
 import { Subtitle } from "@/components/text/subtitle";
-import { FaFacebook } from "react-icons/fa";
 
 let donateOptions: DonateCardProps[] = [
-  {
-    title: "Donate on Facebook",
-    text: (
-      <p>
-        ESAR Receives 100% of your donation via Facebook. Simply visit our page
-        click on the &apos;Donate&apos; button.
-      </p>
-    ),
-    imageHref: "/kcesar/donate/fb-donate.png",
-    imageAlt: "ESAR Facebook Page showing donate button",
-    showButton: true,
-    button: (
-      <SimpleDonateLinkButton
-        href="https://www.facebook.com/kingcountyesar/"
-        buttonIcon={<FaFacebook className="w-5 h-5" />}
-      />
-    ),
-  },
   {
     title: "Donate via PayPal",
     text: (
@@ -70,7 +50,7 @@ export default async function Donate() {
       <BasicLink href="/truck" title="View Plans and Donation Options" />
       <div className="divider py-5" />
       <Subtitle content="General Donations: Here's a few easy ways to donate!" />
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 px-10 mt-10">
+      <div className="flex flex-wrap justify-center gap-10 px-10 mt-10">
         {donateOptions.map((option, idx) => (
           <DonateCard key={idx} props={option} />
         ))}

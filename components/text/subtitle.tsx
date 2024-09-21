@@ -1,7 +1,7 @@
 export function Subtitle({ content }: { content: string }) {
-  return <h2 className="text-center underline px-4">{content}</h2>;
-}
-
-export function SubtitleNoUnderline({ content }: { content: string }) {
-  return <h2 className="text-center px-4">{content}</h2>;
+  return (
+    <h2 className="text-center text-3xl md:text-4xl font-bold tracking-widest px-4">
+      {content}
+    </h2>
+  );
 }

@@ -1,8 +1,10 @@
-import Link from "next/link";
 import Banner from "@/components/banner/banner";
 import Card from "./card";
 import BasicLayout from "@/components/layout/basiclayout";
-import { SubtitleNoUnderline } from "@/components/text/subtitle";
+import { Subtitle } from "@/components/text/subtitle";
+import BasicBody from "@/components/layout/basicbody";
+import CenteredText from "@/components/text/centeredtext";
+import BasicLink from "@/components/navigation/basiclink";
 
 export default async function About() {
   let people = [
@@ -50,36 +52,37 @@ export default async function About() {
         location="/kcesar/advanced-litter/advanced-litter-8.jpg"
         alt="Rescuers standing"
       />
-      <SubtitleNoUnderline content="Who We Are" />
-      <p className="text-xl pt-8 text-justify px-20 container">
-        King County Explorer Search & Rescue was founded in 1954 as one of the
-        first organized search and rescue teams in the country, and the first to
-        accept youth members. The &quot;Explorer&quot; in Explorer Search &
-        Rescue comes from ESAR&apos;s affiliation with the Boy Scouts of America
-        Learning for Life program. King County ESAR still maintains a Post with
-        the Boy Scouts of America but we are not as directly associated with
-        Scouting as we once were. Today, we are the largest of nine member-units
-        of the King County Search & Rescue Association (KCSARA) and accept both
-        adult and youth members each training season.
-      </p>
-      <Link href="/about/history" className="btn bg-esar-green mt-8">
-        Our History
-      </Link>
-      <div className="divider py-10"></div>
-      <SubtitleNoUnderline content="Leadership" />
-      <br />
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 px-10">
-        {people.map((person) => (
-          <Card
-            key={person.personName}
-            personName={person.personName}
-            title={person.title}
-            email={person.email}
-            location={person.location}
-            alt={person.alt}
-          ></Card>
-        ))}
-      </div>
+      <BasicBody>
+        <Subtitle content="Who We Are" />
+        <CenteredText
+          content='King County Explorer Search & Rescue was founded in 1954 as one of the
+          first organized search and rescue teams in the country, and the first
+          to accept youth members. The "Explorer" in Explorer Search &
+          Rescue comes from ESAR&apos;s affiliation with the Boy Scouts of
+          America Learning for Life program. King County ESAR still maintains a
+          Post with the Boy Scouts of America but we are not as directly
+          associated with Scouting as we once were. Today, we are the largest of
+          nine member-units of the King County Search & Rescue Association
+          (KCSARA) and accept both adult and youth members each training season.'
+        />
+
+        <BasicLink title="Our History" href="/about/history" />
+        <div className="divider py-10"></div>
+        <Subtitle content="Leadership" />
+        <br />
+        <div className="flex flex-wrap justify-center gap-10 p-10">
+          {people.map((person) => (
+            <Card
+              key={person.personName}
+              personName={person.personName}
+              title={person.title}
+              email={person.email}
+              location={person.location}
+              alt={person.alt}
+            ></Card>
+          ))}
+        </div>
+      </BasicBody>
     </BasicLayout>
   );
 }

@@ -19,9 +19,9 @@ export default function Drawer() {
     <div className="drawer">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
-        <div className="px-4 flex gap-2 items-center">
-          <label htmlFor="my-drawer">
-            <FaBarsStaggered className="w-6 h-6 text-white" />
+        <div className="px-2 flex gap-2 items-center">
+          <label htmlFor="my-drawer" className="md:hidden">
+            <FaBarsStaggered className="pl-2 w-6 h-6 text-white" />
           </label>
           <div className="hidden md:inline-block">
             <Logo />
@@ -46,11 +46,6 @@ export default function Drawer() {
             </Link>
           </li>
           <li className="hover:bg-esar-green hover:text-white rounded-xl">
-            <Link href="/donate" onClick={onLinkClick}>
-              <h3>Donate</h3>
-            </Link>
-          </li>
-          <li className="hover:bg-esar-green hover:text-white rounded-xl">
             <Link href="/join-us" onClick={onLinkClick}>
               <h3>Join Us</h3>
             </Link>
@@ -59,6 +54,11 @@ export default function Drawer() {
             <Link href="/contact-us" onClick={onLinkClick}>
               <h3>Contact Us</h3>
             </Link>
+          </li>
+          <li className="hover:bg-esar-green hover:text-white rounded-xl">
+            <a href="https://sites.google.com/kcesar.org/members">
+              <h3>Contact Us</h3>
+            </a>
           </li>
 
           <li className="flex-grow pointer-events-none bg-inherit" />

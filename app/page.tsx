@@ -5,6 +5,8 @@ import SmallImage from "@/components/home/smallimage";
 import GridImage from "@/components/home/gridimage";
 import Video from "@/components/home/video";
 import InstagramEmbed from "@/components/instagram/instagram";
+import BasicBody from "@/components/layout/basicbody";
+import BasicLayout from "@/components/layout/basiclayout";
 
 export default function Home() {
   return (
@@ -15,9 +17,9 @@ export default function Home() {
           <Hero />
         </div>
       </div>
-      <div className="">
-        <div className="flex min-w-full justify-items-center content-center text-center bg-base-100 px-10 py-10">
-          <div className="container mx-auto">
+      <div className="bg-base-100 py-10">
+        <BasicLayout>
+          <BasicBody>
             <div className="hidden grid-cols-3 lg:grid gap-4 gap-y-10 place-items-stretch">
               <GridImage
                 location="/kcesar/advanced-litter/advanced-litter-19.jpg"
@@ -114,8 +116,8 @@ export default function Home() {
             <div className="flex justify-center">
               <InstagramEmbed />
             </div>
-          </div>
-        </div>
+          </BasicBody>
+        </BasicLayout>
       </div>
     </div>
   );

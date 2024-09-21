@@ -1,5 +1,5 @@
 import BasicLink from "@/components/navigation/basiclink";
-import { SubtitleNoUnderline } from "@/components/text/subtitle";
+import { Subtitle } from "@/components/text/subtitle";
 import { CenteredTextMinimalXPadding } from "@/components/text/centeredtext";
 
 export default function GridText({
@@ -15,7 +15,7 @@ export default function GridText({
 }) {
   return (
     <div className="flex items-center flex-col justify-center">
-      <SubtitleNoUnderline content={title} />
+      <Subtitle content={title} />
       <CenteredTextMinimalXPadding content={body} />
       <BasicLink title={linkText} href={link} />
     </div>
