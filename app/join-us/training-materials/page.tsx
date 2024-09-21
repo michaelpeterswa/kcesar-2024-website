@@ -5,6 +5,8 @@ import LinkCard from "./linkcard";
 import TrainingCalendar from "./trainingcalendar";
 import { getTrainingSessions } from "./trainingdates";
 import BasicBody from "@/components/layout/basicbody";
+import Links from "@/components/join-us/links";
+import { links } from "../links";
 
 export default async function TrainingMaterials() {
   let trainingSessions = getTrainingSessions();
@@ -17,6 +19,8 @@ export default async function TrainingMaterials() {
       />
 
       <BasicBody>
+        <Links links={links} />
+        <div className="pt-5" />
         <div id="traning-materials" />
         <Subtitle content="Training Materials" />
         <div className="flex flex-wrap justify-center gap-10 px-10 mt-10">

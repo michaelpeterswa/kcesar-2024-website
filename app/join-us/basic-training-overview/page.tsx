@@ -5,6 +5,8 @@ import CenteredText from "@/components/text/centeredtext";
 import { Subtitle } from "@/components/text/subtitle";
 import BasicImage from "@/components/image/basicimage";
 import BasicBody from "@/components/layout/basicbody";
+import Links from "@/components/join-us/links";
+import { links } from "../links";
 
 export default async function BasicTrainingOverview() {
   return (
@@ -15,6 +17,8 @@ export default async function BasicTrainingOverview() {
         alt="Rescuers using a litter to evacuate a subject"
       />
       <BasicBody>
+        <Links links={links} />
+        <div className="pt-5" />
         <Subtitle content="Basic Training Overview" />
         <CenteredText
           content="ESAR Basic Training is a comprehensive program designed to prepare new

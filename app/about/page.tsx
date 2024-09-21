@@ -67,8 +67,7 @@ export default async function About() {
         />
 
         <BasicLink title="Our History" href="/about/history" />
-        <div className="divider py-10"></div>
-        <Subtitle content="Leadership" />
+
         <br />
         <div className="flex flex-wrap justify-center gap-10 p-10">
           {people.map((person) => (
@@ -81,6 +80,14 @@ export default async function About() {
               alt={person.alt}
             ></Card>
           ))}
+        </div>
+        <div className="divider py-10" />
+        <Subtitle content="Annual Report" />
+        <div className="w-full h-[30rem] md:h-[70rem] p-10 flex justify-center">
+          <iframe
+            className="w-full"
+            src="/kcesar/annual-report/2023-annual-report.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+          />
         </div>
       </BasicBody>
     </BasicLayout>

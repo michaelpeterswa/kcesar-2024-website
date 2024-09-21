@@ -3,6 +3,8 @@ import DonateCard, {
   DonateCardProps,
   PaypalDonateButton,
 } from "@/components/donate/card";
+import BasicImage from "@/components/image/basicimage";
+import BasicBody from "@/components/layout/basicbody";
 import BasicLayout from "@/components/layout/basiclayout";
 import BasicLink from "@/components/navigation/basiclink";
 import { Subtitle } from "@/components/text/subtitle";
@@ -45,16 +47,23 @@ export default async function Donate() {
         location="/kcesar/advanced-litter/advanced-litter-32.jpg"
         alt="Rescuers navigating a litter over an obstacle"
       />
-      <Subtitle content="We are fundraising for a new rescue truck!" />
-      <div className="py-4" />
-      <BasicLink href="/truck" title="View Plans and Donation Options" />
-      <div className="divider py-5" />
-      <Subtitle content="General Donations: Here's a few easy ways to donate!" />
-      <div className="flex flex-wrap justify-center gap-10 px-10 mt-10">
-        {donateOptions.map((option, idx) => (
-          <DonateCard key={idx} props={option} />
-        ))}
-      </div>
+      <BasicBody>
+        <Subtitle content="We are fundraising for a new rescue truck!" />
+        <div className="py-5" />
+        <BasicImage
+          location="/kcesar/new_truck/truck-render.png"
+          alt="A preview render of a future rescue truck"
+        />
+        <div className="py-4" />
+        <BasicLink href="/truck" title="View Plans and Donation Options" />
+        <div className="divider py-5" />
+        <Subtitle content="General Donations: Here's a few easy ways to donate!" />
+        <div className="flex flex-wrap justify-center gap-10 px-10 mt-10">
+          {donateOptions.map((option, idx) => (
+            <DonateCard key={idx} props={option} />
+          ))}
+        </div>
+      </BasicBody>
     </BasicLayout>
   );
 }

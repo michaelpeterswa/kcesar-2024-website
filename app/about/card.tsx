@@ -26,7 +26,7 @@ export default function Card({
           className="object-cover max-h-[300px]"
         />
       </figure>
-      <div className="card-body bg-esar-green rounded-b-xl">
+      <div className="card-body text-white bg-esar-green rounded-b-xl">
         <h2 className="card-title"> {personName}</h2>
 
         <div className="card-actions justify-end">

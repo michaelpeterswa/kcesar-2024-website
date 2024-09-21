@@ -3,9 +3,10 @@ import CenteredText from "@/components/text/centeredtext";
 import { Subtitle } from "@/components/text/subtitle";
 import BasicImage from "@/components/image/basicimage";
 import BasicLayout from "@/components/layout/basiclayout";
-import BasicLink from "@/components/navigation/basiclink";
 import BasicBody from "@/components/layout/basicbody";
 import Application from "@/components/join-us/application";
+import Links from "@/components/join-us/links";
+import { links } from "./links";
 
 export default async function JoinUs() {
   return (
@@ -16,24 +17,9 @@ export default async function JoinUs() {
         alt="Rescuers using a litter to evacuate a subject"
       />
       <BasicBody>
-        <div className="">
+        <Links links={links} />
+        <div className="pt-10">
           <Application acceptingApplications={false} />
-        </div>
-        <div className="divider pt-5 pb-10" />
-        <Subtitle content="Interested? Continue learning below:" />
-        <div className="flex my-8 gap-4">
-          <BasicLink
-            title="Basic Training Overview"
-            href="/join-us/basic-training-overview"
-          />
-          <BasicLink
-            title="Training Calendar"
-            href="/join-us/training-materials#training-calendar"
-          />
-          <BasicLink
-            title="Training Materials"
-            href="/join-us/training-materials"
-          />
         </div>
         <div className="divider pb-10" />
         <Subtitle content="Joining King County Explorer Search & Rescue" />

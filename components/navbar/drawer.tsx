@@ -57,7 +57,7 @@ export default function Drawer() {
           </li>
           <li className="hover:bg-esar-green hover:text-white rounded-xl">
             <a href="https://sites.google.com/kcesar.org/members">
-              <h3>Contact Us</h3>
+              <h3>Members</h3>
             </a>
           </li>
 

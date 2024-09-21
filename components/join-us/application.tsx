@@ -1,6 +1,8 @@
+import { FaFacebook } from "react-icons/fa";
 import BasicLink from "../navigation/basiclink";
 import CenteredText from "../text/centeredtext";
 import { Subtitle } from "../text/subtitle";
+import Link from "next/link";
 
 export default function Application({
   acceptingApplications,
@@ -18,10 +20,17 @@ export default function Application({
     );
   } else {
     return (
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-4 pb-6">
         <Subtitle content="Ready to Apply?" />
-        <div className="pt-4">
-          <CenteredText content="Training season is now underway and we are not currently accepting applications. Please check back next spring/summer!" />
+        <div className="pt-4 flex flex-col items-center">
+          <CenteredText content="Training season is now underway and we are not currently accepting applications. Please join the KCESAR Interest Facebook page below and check back next spring!" />
+          <Link
+            href="https://www.facebook.com/groups/2354290631533498/"
+            className="btn bg-esar-green hover:bg-base-300 text-white border-none"
+          >
+            <FaFacebook />
+            King County ESAR Interest
+          </Link>
         </div>
       </div>
     );

@@ -43,7 +43,7 @@ export function SimpleDonateLinkButton({
 }) {
   return (
     <a href={href}>
-      <div className="btn bg-esar-green flex justify-center">
+      <div className="btn text-white bg-esar-green flex justify-center">
         Donate Now {buttonIcon}
       </div>
     </a>
@@ -59,7 +59,7 @@ export function PaypalDonateButton() {
     >
       <input type="hidden" name="cmd" value="_s-xclick" />
       <input type="hidden" name="hosted_button_id" value="6R8CW7RS2HRBN" />
-      <button className="btn bg-esar-green flex justify-center">
+      <button className="btn bg-esar-green text-white flex justify-center">
         Donate Now <FaPaypal className="w-5 h-5" />
       </button>
     </form>
