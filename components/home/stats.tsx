@@ -20,6 +20,7 @@ export default function Stats({
               duration={4}
               scrollSpyDelay={500}
               enableScrollSpy
+              scrollSpyOnce={true}
             />
             +
           </span>
