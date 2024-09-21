@@ -22,8 +22,8 @@ export default function TrainingCalendar({
 
   return (
     <div className="overflow-x-auto rounded-xl">
-      {sortedSessions.map((sessions) => (
-        <div className="py-4">
+      {sortedSessions.map((sessions, index) => (
+        <div className="py-4" key={index}>
           <div className="pb-4">
             <Subtitle content={sessions[0].course.name} />
           </div>
