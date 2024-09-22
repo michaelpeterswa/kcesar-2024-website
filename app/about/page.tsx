@@ -1,7 +1,7 @@
 import Banner from "@/components/banner/banner";
 import Card from "./card";
 import BasicLayout from "@/components/layout/basiclayout";
-import { Subtitle } from "@/components/text/subtitle";
+import Subtitle from "@/components/text/subtitle";
 import BasicBody from "@/components/layout/basicbody";
 import CenteredText from "@/components/text/centeredtext";
 import BasicLink from "@/components/navigation/basiclink";

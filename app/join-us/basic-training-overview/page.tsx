@@ -2,7 +2,7 @@ import Banner from "@/components/banner/banner";
 import BasicLink from "@/components/navigation/basiclink";
 import BasicLayout from "@/components/layout/basiclayout";
 import CenteredText from "@/components/text/centeredtext";
-import { Subtitle } from "@/components/text/subtitle";
+import Subtitle from "@/components/text/subtitle";
 import BasicImage from "@/components/image/basicimage";
 import BasicBody from "@/components/layout/basicbody";
 import Links from "@/components/join-us/links";

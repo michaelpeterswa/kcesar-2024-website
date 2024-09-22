@@ -300,42 +300,42 @@ const sessions: Session[] = [
       course_date: "September 15th",
       course_start_time: "9:00am",
       course_end_time: "5:00pm",
-      location_id: "TBDTBD"
+      location_id: "ESFRHQ"
     },
     {
       course_id: "CRSB",
       course_date: "September 29th",
       course_start_time: "9:00am",
       course_end_time: "5:00pm",
-      location_id: "TBDTBD"
+      location_id: "ESFRHQ"
     },
     {
       course_id: "CRSB",
       course_date: "October 12th",
       course_start_time: "9:00am",
       course_end_time: "5:00pm",
-      location_id: "TBDTBD"
+      location_id: "FIRE73"
     },
     {
       course_id: "SFA1",
       course_date: "October 6th",
       course_start_time: "9:00am",
       course_end_time: "6:00pm",
-      location_id: "TBDTBD"
+      location_id: "KCSARA"
     },
     {
       course_id: "SFA1",
       course_date: "October 20th",
       course_start_time: "9:00am",
       course_end_time: "6:00pm",
-      location_id: "TBDTBD"
+      location_id: "KCSARA"
     },
     {
       course_id: "SFA1",
       course_date: "October 26th",
       course_start_time: "9:00am",
       course_end_time: "6:00pm",
-      location_id: "TBDTBD"
+      location_id: "KCSARA"
     },
     {
       course_id: "CRSC",
@@ -405,21 +405,21 @@ const sessions: Session[] = [
       course_date: "February 1st",
       course_start_time: "9:00am",
       course_end_time: "6:00pm",
-      location_id: "TBDTBD"
+      location_id: "KCSARA"
     },
     {
       course_id: "SFA2",
       course_date: "February 8th",
       course_start_time: "9:00am",
       course_end_time: "6:00pm",
-      location_id: "TBDTBD"
+      location_id: "KCSARA"
     },
     {
       course_id: "SFA2",
       course_date: "February 15th",
       course_start_time: "9:00am",
       course_end_time: "6:00pm",
-      location_id: "TBDTBD"
+      location_id: "KCSARA"
     },
     {
       course_id: "CRS3",

@@ -3,7 +3,7 @@ import BasicImage from "@/components/image/basicimage";
 import BasicBody from "@/components/layout/basicbody";
 import BasicLayout from "@/components/layout/basiclayout";
 import CenteredText from "@/components/text/centeredtext";
-import { Subtitle } from "@/components/text/subtitle";
+import Subtitle from "@/components/text/subtitle";
 
 export default async function Truck() {
   return (

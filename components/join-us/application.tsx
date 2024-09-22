@@ -1,7 +1,7 @@
 import { FaFacebook } from "react-icons/fa";
-import BasicLink from "../navigation/basiclink";
-import CenteredText from "../text/centeredtext";
-import { Subtitle } from "../text/subtitle";
+import BasicLink from "@/components/navigation/basiclink";
+import CenteredText from "@/components/text/centeredtext";
+import Subtitle from "@/components/text/subtitle";
 import Link from "next/link";
 
 export default function Application({

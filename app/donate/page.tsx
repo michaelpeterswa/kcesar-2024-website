@@ -7,7 +7,7 @@ import BasicImage from "@/components/image/basicimage";
 import BasicBody from "@/components/layout/basicbody";
 import BasicLayout from "@/components/layout/basiclayout";
 import BasicLink from "@/components/navigation/basiclink";
-import { Subtitle } from "@/components/text/subtitle";
+import Subtitle from "@/components/text/subtitle";
 
 let donateOptions: DonateCardProps[] = [
   {

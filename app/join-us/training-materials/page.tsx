@@ -1,6 +1,6 @@
 import Banner from "@/components/banner/banner";
 import BasicLayout from "@/components/layout/basiclayout";
-import { Subtitle } from "@/components/text/subtitle";
+import Subtitle from "@/components/text/subtitle";
 import LinkCard from "./linkcard";
 import TrainingCalendar from "./trainingcalendar";
 import { getTrainingSessions } from "./trainingdates";

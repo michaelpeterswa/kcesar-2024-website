@@ -1,5 +1,5 @@
 import BasicLink from "@/components/navigation/basiclink";
-import { Subtitle } from "@/components/text/subtitle";
+import Subtitle from "@/components/text/subtitle";
 import { CenteredTextMinimalXPadding } from "@/components/text/centeredtext";
 
 export default function GridText({

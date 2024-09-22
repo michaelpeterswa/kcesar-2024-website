@@ -1,7 +1,7 @@
 import Banner from "@/components/banner/banner";
 import BasicLayout from "@/components/layout/basiclayout";
 import BasicLink from "@/components/navigation/basiclink";
-import { Subtitle } from "@/components/text/subtitle";
+import Subtitle from "@/components/text/subtitle";
 
 export default function NotFound() {
   return (

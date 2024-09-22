@@ -1,6 +1,6 @@
 import Banner from "@/components/banner/banner";
 import CenteredText from "@/components/text/centeredtext";
-import { Subtitle } from "@/components/text/subtitle";
+import Subtitle from "@/components/text/subtitle";
 import BasicImage from "@/components/image/basicimage";
 import BasicLayout from "@/components/layout/basiclayout";
 import BasicBody from "@/components/layout/basicbody";
