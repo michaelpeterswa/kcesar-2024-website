@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import Logo from "@/components/navbar/logo";
+import { usePathname } from "next/navigation";
 
 export default function Links() {
+  let pathname = usePathname();
+
   return (
     <>
       <div className="navbar-center hidden md:flex">
@@ -21,9 +26,11 @@ export default function Links() {
           </li>
         </ul>
       </div>
-      <div className="navbar-center md:hidden z-10">
-        <Logo />
-      </div>
+      {pathname !== "/" && (
+        <div className="navbar-center md:hidden z-10">
+          <Logo />
+        </div>
+      )}
     </>
   );
 }

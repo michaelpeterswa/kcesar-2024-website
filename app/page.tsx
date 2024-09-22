@@ -104,15 +104,15 @@ export default function Home() {
               <Stats number={18000} description="Training Hours per Year" />
               <Stats number={250} description="Volunteers" />
             </div>
-            <div className="lg:hidden grid-cols-1 place-items-stretch grid">
+            <div className="lg:hidden grid-cols-1 place-items-stretch grid pb-16">
               <Stats number={125} description="Missions per Year" />
               <div className="divider"></div>
               <Stats number={18000} description="Training Hours per Year" />
               <div className="divider"></div>
               <Stats number={250} description="Volunteers" />
             </div>
-            <div className="divider"></div>
-            <h1 className="font-bold pb-6">KCESAR on Instagram!</h1>
+            <div className="divider py-10"></div>
+            <h1 className="font-bold py-6">KCESAR on Instagram!</h1>
             <div className="flex justify-center">
               <InstagramEmbed />
             </div>
