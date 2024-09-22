@@ -25,12 +25,8 @@ export default function TrainingCalendar({
     <div className="overflow-x-auto rounded-xl">
       {sortedSessions.map((sessions, index) => (
         <div className="py-4" key={index}>
-          <div className="pb-4 flex flex-col items-center">
-            <Subtitle content={sessions[0].course.name} />
-            <PrerequisitesCard
-              prerequisites={sessions[0].course.prerequisites}
-            />
-          </div>
+          <Subtitle content={sessions[0].course.name} />
+          <PrerequisitesCard prerequisites={sessions[0].course.prerequisites} />
           <table className="table bg-base-300">
             <thead>
               <tr>
