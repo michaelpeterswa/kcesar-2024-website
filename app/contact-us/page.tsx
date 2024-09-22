@@ -23,7 +23,7 @@ export default async function ContactUs() {
           </p>
         </div>
         <div className="divider"></div>
-        <div className="flex flex-wrap justify-center gap-10 px-10 mt-10">
+        <div className="flex flex-wrap justify-center gap-10 pt-10">
           <div className="card bg-base-200 w-96 shadow-xl">
             <div className="card-body">
               <h2 className="card-title text-3xl">KCESAR Contacts</h2>

@@ -23,7 +23,7 @@ export default async function TrainingMaterials() {
         <div className="pt-5" />
         <div id="traning-materials" />
         <Subtitle content="Training Materials" />
-        <div className="flex flex-wrap justify-center gap-10 px-10 mt-10">
+        <div className="flex flex-wrap justify-center gap-10 pt-10">
           <LinkCard
             title="Basic Training Orientation Packet"
             content="Information surrounding basic training including membership requirements, training courses overview, and more."

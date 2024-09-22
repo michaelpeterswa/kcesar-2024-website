@@ -16,7 +16,7 @@ export default function Drawer() {
   };
 
   return (
-    <div className="drawer">
+    <div className="drawer z-20">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         <div className="px-2 flex gap-2 items-center">

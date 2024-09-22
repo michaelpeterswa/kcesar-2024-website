@@ -58,7 +58,7 @@ export default async function Donate() {
         <BasicLink href="/truck" title="View Plans and Donation Options" />
         <div className="divider py-5" />
         <Subtitle content="General Donations: Here's a few easy ways to donate!" />
-        <div className="flex flex-wrap justify-center gap-10 px-10 mt-10">
+        <div className="flex flex-wrap justify-center gap-10 pt-10">
           {donateOptions.map((option, idx) => (
             <DonateCard key={idx} props={option} />
           ))}
