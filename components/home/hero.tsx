@@ -3,7 +3,7 @@ import BasicLink from "../navigation/basiclink";
 
 export default function Hero() {
   return (
-    <div className="h-screen flex text-center items-center justify-center text-white -translate-y-16">
+    <div className="h-[calc(100vh-80px)] flex text-center items-center justify-center text-white -translate-y-[60px]">
       <div className="max-w-6xl pb-10 px-5">
         <div className="relative w-[150px] h-[150px] md:w-[200px] md:h-[200px] mt-10 md:mt-24 mb-10 inline-block">
           <Image

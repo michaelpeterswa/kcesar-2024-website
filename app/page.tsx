@@ -11,11 +11,10 @@ import BasicLayout from "@/components/layout/basiclayout";
 export default function Home() {
   return (
     <div>
-      <div className="container mx-auto">
-        <div className="min-h-screen">
-          <Video />
-          <Hero />
-        </div>
+      <div>
+        {/* children with negative z div */}
+        <Video />
+        <Hero />
       </div>
       <div className="bg-base-100 py-10">
         <BasicLayout>
