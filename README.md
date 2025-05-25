@@ -1,3 +1,8 @@
+# Notice
+⚠️ **This repository is archived as of May 24, 2025.**
+
+The project now lives at [kcesar/public_website](https://github.com/kcesar/public_website).
+
 <h1 align="center">
   kcesar_2024_website
 </h1>
